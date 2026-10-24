@@ -47,7 +47,9 @@ I calibrated the camera using the chessboard photos in camera_cal/. In camera_ca
 
 #### 1. Provide an example of a distortion-corrected image.
 
-TODO: Add your text here!!!
+I corrected the lens distortion in the road images using the camera matrix and distortion coefficients from calibration. In undistort_images.py, load_calibration() loads those values, and undistort_image() uses cv2.undistort() to fix each image. Since the road images are 960 × 540 and the calibration images are 1280 × 720, I scaled the focal lengths and principal point by 0.75 and left the distortion coefficients unchanged. This assumes both sets of images were taken with the same camera and have the same field of view. I corrected all 17 road images and saved before-and-after comparisons at their original resolutions.
+
+![Road image: original and distortion corrected](./outputs/undistortion/comparisons/test1_comparison.jpg)
 
 #### 2. Describe how (and identify where in your code) you used color transforms, gradients or other methods to create a thresholded binary image.  Provide an example of a binary image result.
 

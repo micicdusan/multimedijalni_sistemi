@@ -1,0 +1,85 @@
+{
+  "image_size": [
+    1280,
+    720
+  ],
+  "board_size": [
+    9,
+    6
+  ],
+  "camera_matrix": [
+    [
+      1158.7747542118345,
+      0.0,
+      669.6427383651636
+    ],
+    [
+      0.0,
+      1154.0766076218958,
+      388.07945216468056
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "distortion_coefficients": [
+    -0.25677908720338477,
+    0.04338455003103445,
+    -0.0006874544851226006,
+    0.0001257689497055084,
+    -0.11502552097617127
+  ],
+  "distortion_coefficient_order": [
+    "k1",
+    "k2",
+    "p1",
+    "p2",
+    "k3"
+  ],
+  "rms_reprojection_error_pixels": 0.8528795005003442,
+  "used_images": [
+    "calibration10.jpg",
+    "calibration11.jpg",
+    "calibration12.jpg",
+    "calibration13.jpg",
+    "calibration14.jpg",
+    "calibration16.jpg",
+    "calibration17.jpg",
+    "calibration18.jpg",
+    "calibration19.jpg",
+    "calibration2.jpg",
+    "calibration20.jpg",
+    "calibration3.jpg",
+    "calibration6.jpg",
+    "calibration8.jpg",
+    "calibration9.jpg"
+  ],
+  "skipped_images": {
+    "calibration1.jpg": "Internal corner grid (9, 6) not found.",
+    "calibration15.jpg": "Image size (1281, 721) differs from calibration size (1280, 720).",
+    "calibration4.jpg": "Internal corner grid (9, 6) not found.",
+    "calibration5.jpg": "Internal corner grid (9, 6) not found.",
+    "calibration7.jpg": "Image size (1281, 721) differs from calibration size (1280, 720)."
+  },
+  "per_image_rms_pixels": {
+    "calibration10.jpg": 0.5082795023918152,
+    "calibration11.jpg": 0.7109621167182922,
+    "calibration12.jpg": 0.7737479209899902,
+    "calibration13.jpg": 1.1710952520370483,
+    "calibration14.jpg": 1.043723225593567,
+    "calibration16.jpg": 1.076721429824829,
+    "calibration17.jpg": 0.7478513717651367,
+    "calibration18.jpg": 0.45350125432014465,
+    "calibration19.jpg": 0.8679273724555969,
+    "calibration2.jpg": 1.2414789199829102,
+    "calibration20.jpg": 0.8403387069702148,
+    "calibration3.jpg": 1.1524848937988281,
+    "calibration6.jpg": 0.19909468293190002,
+    "calibration8.jpg": 0.6502074003219604,
+    "calibration9.jpg": 0.6100016236305237
+  },
+  "opencv_version": "4.14.0",
+  "numpy_version": "2.2.6"
+}

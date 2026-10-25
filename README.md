@@ -1,9 +1,3 @@
-## Writeup Template
-
-### You use this file as a template for your writeup.
-
----
-
 **Lane Finding Project**
 
 The goals / steps of this project are the following:
@@ -17,15 +11,34 @@ The goals / steps of this project are the following:
 * Warp the detected lane boundaries back onto the original image.
 * Output visual display of the lane boundaries and numerical estimation of lane curvature and vehicle position.
 
-[//]: # (Image References)
+### Setup and running
 
-[image1]: ./examples/undistort_output.png "Undistorted"
-[image2]: ./test_images/test1.jpg "Road Transformed"
-[image3]: ./examples/binary_combo_example.jpg "Binary Example"
-[image4]: ./examples/warped_straight_lines.jpg "Warp Example"
-[image5]: ./examples/color_fit_lines.jpg "Fit Visual"
-[image6]: ./examples/example_output.jpg "Output"
-[video1]: ./project_video.mp4 "Video"
+From the repository root, create a Python environment and install the dependencies:
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install "numpy>=1.23,<3" "opencv-python-headless>=4.8,<5"
+```
+
+Run the stages in order to reproduce the image results and all six annotated videos:
+
+```bash
+python camera_calibration.py
+python undistort_images.py
+python thresholding.py
+python perspective_transform.py
+python lane_fitting.py
+python lane_metrics.py
+python lane_overlay.py
+python video_pipeline.py
+```
+
+Results are saved under `outputs/`. Once the calibration and metric-settings report exist, you can process only the full-length project video with:
+
+```bash
+python video_pipeline.py --input test_videos/project_video03.mp4
+```
 
 ---
 
@@ -47,7 +60,7 @@ I calibrated the camera using the chessboard photos in camera_cal/. In camera_ca
 
 #### 1. Provide an example of a distortion-corrected image.
 
-I corrected the lens distortion in the road images using the camera matrix and distortion coefficients from calibration. In undistort_images.py, load_calibration() loads those values, and undistort_image() uses cv2.undistort() to fix each image. Since the road images are 960 × 540 and the calibration images are 1280 × 720, I scaled the focal lengths and principal point by 0.75 and left the distortion coefficients unchanged. This assumes both sets of images were taken with the same camera and have the same field of view. I corrected all 17 road images and saved before-and-after comparisons at their original resolutions.
+I corrected the lens distortion in the road images using the camera matrix and distortion coefficients from calibration. In undistort_images.py, load_calibration() loads those values, and undistort_image() uses cv2.undistort() to fix each image. Eight road images are 1280 × 720, matching the calibration resolution, and nine are 960 × 540. For the nine smaller images, I scaled the focal lengths and principal point by 0.75; the eight larger images use the original camera matrix. The distortion coefficients remain unchanged. This assumes the road and calibration images were taken with the same camera and have the same field of view. I corrected all 17 road images and saved before-and-after comparisons at their original resolutions.
 
 ![Road image: original and distortion corrected](./outputs/undistortion/comparisons/test1_comparison.jpg)
 
@@ -55,7 +68,7 @@ I corrected the lens distortion in the road images using the camera matrix and d
 
 I implemented and tested several thresholding methods in `thresholding.py` to identify lane markings in the road images. The experiment included color-based and gradient-based thresholding, as well as two combinations of their results using logical OR and AND operations.
 
-Before applying the thresholds, I corrected the lens distortion and applied a 3 × 3 Gaussian blur to reduce image noise. For color thresholding, I used the HLS color space to detect bright, low-saturation pixels corresponding to white lane marking, and HSV to detect yellows markings. For gradient thresholding, I used the absolute horizontal Sobel derivative of the grayscale image, normalized to the range 0–255, to detect changes in intensity along lane-marking edges.
+Before applying the thresholds, I corrected the lens distortion and applied a 3 × 3 Gaussian blur to reduce image noise. For color thresholding, I used the HLS color space to detect bright, low-saturation pixels corresponding to white lane markings, and HSV to detect yellow markings. For gradient thresholding, I used the absolute horizontal Sobel derivative of the grayscale image, normalized to the range 0–255, to detect changes in intensity along lane-marking edges.
 
 I tested all four methods on the 17 road images using the same threshold values and without applying a region of interest (ROI). I saved the individual binary masks and comparison images to evaluate how well each method detected lane markings and how much unwanted detail it introduced.
 
@@ -389,17 +402,75 @@ radii = {
 
 #### 6. Provide an example image of your result plotted back down onto the road such that the lane area is identified clearly.
 
-TODO: Add your text here!!!
+I implemented the final visualization in `lane_overlay.py`. In `create_lane_masks()`, I evaluated the fitted lane polynomials using `np.polyval()` and created a filled polygon between the left and right boundaries. I also generated separate masks for both lane lines.
+
+```python
+plot_y = np.arange(height)
+left_x = np.polyval(coefficients[0], plot_y)
+right_x = np.polyval(coefficients[1], plot_y)
+
+left_points = np.rint(np.column_stack((left_x, plot_y))).astype(np.int32)
+right_points = np.rint(np.column_stack((right_x, plot_y))).astype(np.int32)
+polygon = np.concatenate((left_points, right_points[::-1]))
+
+cv2.fillPoly(fill, [polygon], 255)
+```
+
+In `project_lane()`, I used the inverse perspective transformation to project the masks back onto the undistorted road image:
+
+```python
+projected = cv2.warpPerspective(
+    masks, inverse_matrix, (width, height), flags=cv2.INTER_LINEAR,
+    borderMode=cv2.BORDER_CONSTANT, borderValue=0,
+)
+```
+
+I then blended the detected lane area with the corrected image using a transparent green overlay, while displaying the left boundary in cyan and the right boundary in red. Finally, I used `render_readout()` to display the approximate lane curvature and vehicle offset calculated in `lane_metrics.py`.
+
+I generated the final visualization for all 17 supplied road images. The following example shows the detected lane and the estimated measurements.
+
+![Detected lane, curvature, and vehicle offset](./outputs/lane_overlay/annotated/test2.png)
 
 ### Pipeline (video)
 
 #### 1. Provide a link to your final video output.  Your pipeline should perform reasonably well on the entire project video (wobbly lines are ok but no catastrophic failures that would cause the car to drive off the road!).
 
-TODO: Add your text here!!!
+I implemented the complete video processing pipeline in `video_pipeline.py`, combining all previously described stages. Each frame is undistorted, thresholded, transformed into a bird's-eye view, and processed to detect and fit the lane boundaries. The detected lane is then projected back onto the corrected image, together with the estimated curvature and vehicle offset.
+
+The main processing steps are performed in `FramePipeline.process()`:
+
+```python
+corrected = undistort_image(frame, *self.calibration)
+binary = or_threshold(corrected, self.threshold_settings)
+warped = warp_binary(binary, self.transform.matrix)
+detection = detect_lane_boundaries(warped, self.lane_settings)
+tracked = self.tracker.update(detection)
+```
+
+To improve stability between frames, I implemented a `LaneTracker` that smooths accepted polynomial coefficients using 25% of the current detection and 75% of the previous tracked result:
+
+```python
+alpha = self.settings.smoothing_alpha
+self.coefficients = alpha * candidate + (1 - alpha) * self.coefficients
+```
+
+The tracker also checks for sudden changes in the detected lane position. While a track remains active, large changes must be confirmed by three consistent detections before replacing it. If detection fails, the previous fit is reused for up to five frames. After that, the old track is discarded and the lane overlay and measurements are removed. A single later valid detection can initialize a new track without blending with the expired history.
+
+I processed all three supplied project videos and three additional challenge videos. The full-length project video contains 1,260 frames at 25 fps, with 1,258 frames using accepted detections and only two using a temporarily held fit. No frames were marked as unavailable. The more challenging videos produced some detection failures and incorrect fits, which are discussed.
+
+**Video results:**
+
+[Full-length project video](./outputs/video/project_video03_output.mp4)
 
 ### Discussion
 
 #### 1. Briefly discuss any problems / issues you faced in your implementation of this project.  Where will your pipeline likely fail?  What could you do to make it more robust?
 
-TODO: Add your text here!!!
+The OR thresholding method helped preserve lane markings under different conditions, but it also introduced noise from road textures, shadows, and unrelated edges. Robust polynomial fitting and geometric checks reduced some of these problems, while temporal smoothing improved stability between video frames. However, smoothing can delay the response to actual lane changes, and reusing previous detections may produce inaccurate results when the road geometry changes quickly.
+
+The pipeline performed well on the standard project videos but struggled with some challenging scenes, particularly sharp curves and changes in road perspective. The fixed perspective transformation assumes relatively flat roads and a consistent camera position. In `challenge03.mp4`, some incorrect fits passed the validation checks, causing the overlay to follow the wrong road markings. This shows that plausible lane geometry does not necessarily mean the correct lane has been detected.
+
+Detection can also be affected by changing lighting, faded markings, glare, and shadows. Possible improvements include adaptive thresholding, better validation of lane boundaries, and tracking methods that use previous detections to guide the search.
+
+Finally, the curvature and vehicle-offset measurements are only approximate because they rely on assumed road dimensions and camera alignment. More accurate estimates would require measured road dimensions and additional camera calibration.
 

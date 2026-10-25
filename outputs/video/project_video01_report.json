@@ -1,0 +1,4500 @@
+{
+  "input": "/home/micicd/multimedija/multimedijalni_sistemi/test_videos/project_video01.mp4",
+  "output": "project_video01_output.mp4",
+  "image_size": [
+    960,
+    540
+  ],
+  "fps": 25.0,
+  "frame_count": 221,
+  "duration_seconds": 8.84,
+  "processing_seconds": 10.220596556995588,
+  "codec": "mp4v",
+  "audio": "Output contains video only.",
+  "metric_settings": {
+    "lane_width_m": 3.7,
+    "visible_road_length_m": 30.0,
+    "vehicle_center_fraction": 0.5
+  },
+  "tracking_settings": {
+    "smoothing_alpha": 0.25,
+    "maximum_shift_fraction": 0.1,
+    "maximum_hold_frames": 5,
+    "reacquire_frames": 3
+  },
+  "threshold_settings": {
+    "blur_kernel": 3,
+    "white_lightness_min": 200,
+    "white_saturation_max": 100,
+    "yellow_hue_min": 15,
+    "yellow_hue_max": 40,
+    "yellow_saturation_min": 80,
+    "yellow_value_min": 80,
+    "sobel_kernel": 3,
+    "gradient_min": 30,
+    "gradient_max": 255
+  },
+  "lane_settings": {
+    "windows": 9,
+    "margin_fraction": 0.08,
+    "minimum_window_pixel_fraction": 0.0002,
+    "minimum_pixel_fraction": 0.00015,
+    "minimum_row_fraction": 0.1,
+    "minimum_y_span_fraction": 0.35,
+    "refinement_iterations": 3,
+    "outlier_sigma": 3.0,
+    "minimum_residual_fraction": 0.01,
+    "minimum_lane_width_fraction": 0.25,
+    "maximum_lane_width_fraction": 0.8
+  },
+  "perspective_settings": {
+    "reference_size": [
+      1280,
+      720
+    ],
+    "source_points": [
+      [
+        580,
+        460
+      ],
+      [
+        705,
+        460
+      ],
+      [
+        1020,
+        660
+      ],
+      [
+        295,
+        660
+      ]
+    ],
+    "destination_margin": 0.25
+  },
+  "status_counts": {
+    "detected": 221
+  },
+  "frames": [
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -8.421897804487604e-06,
+        0.1270343059870431,
+        171.79710136294995
+      ],
+      "right_coefficients": [
+        -1.5124010361698956e-05,
+        -0.11149447252526119,
+        803.9678781346495
+      ],
+      "center_radius_m": 17050.48448657183,
+      "straight": false,
+      "vehicle_offset_m": -0.16331886380794186,
+      "frame": 0,
+      "time_seconds": 0.0
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        8.287730290184967e-06,
+        0.1143747215191544,
+        174.03724388457246
+      ],
+      "right_coefficients": [
+        -1.2247531580295386e-05,
+        -0.11210418492150719,
+        803.3951658958013
+      ],
+      "center_radius_m": 101386.11604975184,
+      "straight": false,
+      "vehicle_offset_m": -0.1641115459000955,
+      "frame": 1,
+      "time_seconds": 0.04
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        3.1266078641748436e-05,
+        0.09722315096806065,
+        177.17633252117605
+      ],
+      "right_coefficients": [
+        -3.992955626354644e-06,
+        -0.11572879862898829,
+        803.1372505233109
+      ],
+      "center_radius_m": 14720.323918079657,
+      "straight": false,
+      "vehicle_offset_m": -0.1670307662320384,
+      "frame": 2,
+      "time_seconds": 0.08
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        6.1013184711951375e-05,
+        0.07779703811605411,
+        180.1634450514889
+      ],
+      "right_coefficients": [
+        4.227845575223079e-06,
+        -0.1196864825728624,
+        803.0247792078233
+      ],
+      "center_radius_m": 6153.661282653874,
+      "straight": false,
+      "vehicle_offset_m": -0.17205122690179517,
+      "frame": 3,
+      "time_seconds": 0.12
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        7.770869739364463e-05,
+        0.06833186679282775,
+        181.342494046649
+      ],
+      "right_coefficients": [
+        1.0405451353148891e-05,
+        -0.1232500527694247,
+        803.3027066465814
+      ],
+      "center_radius_m": 4556.288780831679,
+      "straight": false,
+      "vehicle_offset_m": -0.17621654724612157,
+      "frame": 4,
+      "time_seconds": 0.16
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        6.798003171917328e-05,
+        0.07270881912773394,
+        180.45846940890706
+      ],
+      "right_coefficients": [
+        1.785933684702463e-05,
+        -0.12942320838124124,
+        804.5878349050232
+      ],
+      "center_radius_m": 4677.021524432505,
+      "straight": false,
+      "vehicle_offset_m": -0.17147899873091182,
+      "frame": 5,
+      "time_seconds": 0.2
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        3.2960503238620097e-05,
+        0.08997457135716133,
+        178.43066508217547
+      ],
+      "right_coefficients": [
+        2.37256803519003e-05,
+        -0.13473049511393065,
+        805.8815739881254
+      ],
+      "center_radius_m": 7082.319003586476,
+      "straight": false,
+      "vehicle_offset_m": -0.16083787283428624,
+      "frame": 6,
+      "time_seconds": 0.24
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -2.869897771506313e-05,
+        0.1229954799821665,
+        174.64546456010893
+      ],
+      "right_coefficients": [
+        2.950994369686929e-05,
+        -0.1399037028073552,
+        807.0687517027811
+      ],
+      "center_radius_m": 495051.1051149979,
+      "straight": false,
+      "vehicle_offset_m": -0.14609560633720242,
+      "frame": 7,
+      "time_seconds": 0.28
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -5.178494935384824e-05,
+        0.13572110462964815,
+        173.2130798539531
+      ],
+      "right_coefficients": [
+        3.208217981623676e-05,
+        -0.14277988621205134,
+        807.4190660023623
+      ],
+      "center_radius_m": 20376.383027538617,
+      "straight": false,
+      "vehicle_offset_m": -0.13940978530056553,
+      "frame": 8,
+      "time_seconds": 0.32
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -2.5928105086955156e-05,
+        0.11560106119470881,
+        178.06941575538946
+      ],
+      "right_coefficients": [
+        2.7631675799293296e-05,
+        -0.13518813071998026,
+        803.0413771227098
+      ],
+      "center_radius_m": 235663.69767559168,
+      "straight": false,
+      "vehicle_offset_m": -0.13919716530727416,
+      "frame": 9,
+      "time_seconds": 0.36
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        1.5539884636156837e-06,
+        0.0897225835608767,
+        185.85061901050761
+      ],
+      "right_coefficients": [
+        2.3443021915397068e-05,
+        -0.12314574609306826,
+        795.2678316762868
+      ],
+      "center_radius_m": 16060.679931821162,
+      "straight": false,
+      "vehicle_offset_m": -0.13656293917010948,
+      "frame": 10,
+      "time_seconds": 0.4
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        2.571150026292175e-05,
+        0.06550842822532374,
+        193.12363769375935
+      ],
+      "right_coefficients": [
+        1.5868428867879213e-05,
+        -0.10992948456999334,
+        787.43850107353
+      ],
+      "center_radius_m": 9655.35224423117,
+      "straight": false,
+      "vehicle_offset_m": -0.13013330932730743,
+      "frame": 11,
+      "time_seconds": 0.44
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        4.680630620797304e-05,
+        0.04870018093093091,
+        196.62614419833974
+      ],
+      "right_coefficients": [
+        8.04831354282483e-06,
+        -0.10184629114409204,
+        783.0334361771144
+      ],
+      "center_radius_m": 7318.781301010162,
+      "straight": false,
+      "vehicle_offset_m": -0.1233861682184873,
+      "frame": 12,
+      "time_seconds": 0.48
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        5.954972723657602e-05,
+        0.043591397839035984,
+        195.36070170457376
+      ],
+      "right_coefficients": [
+        2.3592905225655153e-07,
+        -0.10034353713018221,
+        783.0874904664192
+      ],
+      "center_radius_m": 6715.139682700128,
+      "straight": false,
+      "vehicle_offset_m": -0.11674056615145273,
+      "frame": 13,
+      "time_seconds": 0.52
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        6.789065788761846e-05,
+        0.045826254074454426,
+        191.06324871054332
+      ],
+      "right_coefficients": [
+        -3.567063506467174e-06,
+        -0.10564092935180594,
+        786.655707298537
+      ],
+      "center_radius_m": 6241.39754679184,
+      "straight": false,
+      "vehicle_offset_m": -0.11264480602627255,
+      "frame": 14,
+      "time_seconds": 0.56
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        0.00010096817745389736,
+        0.03818784364074748,
+        186.56179843525538
+      ],
+      "right_coefficients": [
+        -8.961014828937521e-06,
+        -0.11363921661741314,
+        792.720448419085
+      ],
+      "center_radius_m": 4363.469972287279,
+      "straight": false,
+      "vehicle_offset_m": -0.11718885633475018,
+      "frame": 15,
+      "time_seconds": 0.6
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        0.00011317176110951781,
+        0.03924930277368151,
+        181.79327219441413
+      ],
+      "right_coefficients": [
+        -1.2431672179733327e-05,
+        -0.12132235719920481,
+        798.396407444341
+      ],
+      "center_radius_m": 3985.214840530038,
+      "straight": false,
+      "vehicle_offset_m": -0.11670829989678656,
+      "frame": 16,
+      "time_seconds": 0.64
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        8.702474756347717e-05,
+        0.05373872814838529,
+        178.68986907170785
+      ],
+      "right_coefficients": [
+        -1.7382059870552544e-05,
+        -0.12327828894071233,
+        801.0219684860084
+      ],
+      "center_radius_m": 5764.69638863994,
+      "straight": false,
+      "vehicle_offset_m": -0.10607229641954387,
+      "frame": 17,
+      "time_seconds": 0.68
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        3.9774247658391966e-05,
+        0.07606884097169037,
+        177.35128589312268
+      ],
+      "right_coefficients": [
+        -2.6869455192200064e-05,
+        -0.11612837519814526,
+        799.5156089614238
+      ],
+      "center_radius_m": 31110.212821471538,
+      "straight": false,
+      "vehicle_offset_m": -0.09280492807718527,
+      "frame": 18,
+      "time_seconds": 0.72
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -4.675581225980546e-05,
+        0.11830014423527047,
+        175.9024183807481
+      ],
+      "right_coefficients": [
+        -3.5925393802791936e-05,
+        -0.10466242564192571,
+        795.3676451296988
+      ],
+      "center_radius_m": 4855.823615250959,
+      "straight": false,
+      "vehicle_offset_m": -0.07573727195059779,
+      "frame": 19,
+      "time_seconds": 0.76
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -2.091781922239885e-05,
+        0.09793448755376305,
+        181.86021880404354
+      ],
+      "right_coefficients": [
+        -4.0865283898609146e-05,
+        -0.0940530838023552,
+        790.3805336971529
+      ],
+      "center_radius_m": 6498.220785779534,
+      "straight": false,
+      "vehicle_offset_m": -0.0826178562111454,
+      "frame": 20,
+      "time_seconds": 0.8
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -1.4944400055275776e-05,
+        0.08914425260679883,
+        186.24180074366393
+      ],
+      "right_coefficients": [
+        -4.337308932500203e-05,
+        -0.08576356032900308,
+        786.2125241329436
+      ],
+      "center_radius_m": 6884.368739550203,
+      "straight": false,
+      "vehicle_offset_m": -0.08628514829102858,
+      "frame": 21,
+      "time_seconds": 0.84
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -2.027264835977538e-05,
+        0.08942787825334543,
+        188.34868371402806
+      ],
+      "right_coefficients": [
+        -4.282523914179432e-05,
+        -0.08242173363742267,
+        784.0628054459845
+      ],
+      "center_radius_m": 6362.806259926927,
+      "straight": false,
+      "vehicle_offset_m": -0.08830096173098691,
+      "frame": 22,
+      "time_seconds": 0.88
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -2.308475643973831e-05,
+        0.09152644685605746,
+        188.568973060835
+      ],
+      "right_coefficients": [
+        -4.4223095468217824e-05,
+        -0.08095424639427998,
+        783.6370671926454
+      ],
+      "center_radius_m": 5964.831267922097,
+      "straight": false,
+      "vehicle_offset_m": -0.0902052546014568,
+      "frame": 23,
+      "time_seconds": 0.92
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -9.09320002668115e-06,
+        0.08427907597518945,
+        189.10238806863762
+      ],
+      "right_coefficients": [
+        -4.423796509632424e-05,
+        -0.08098495668948655,
+        783.9196984889503
+      ],
+      "center_radius_m": 7528.006563794583,
+      "straight": false,
+      "vehicle_offset_m": -0.09388473511774434,
+      "frame": 24,
+      "time_seconds": 0.96
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        1.0614380103064399e-05,
+        0.07173399749591454,
+        190.82872939513413
+      ],
+      "right_coefficients": [
+        -3.642910843031001e-05,
+        -0.08627271297852873,
+        784.9439090867847
+      ],
+      "center_radius_m": 15552.131731723635,
+      "straight": false,
+      "vehicle_offset_m": -0.09825512078889269,
+      "frame": 25,
+      "time_seconds": 1.0
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        2.915209051246303e-05,
+        0.059102274123994034,
+        193.155002705196
+      ],
+      "right_coefficients": [
+        -2.8695496796249747e-05,
+        -0.08977133060014694,
+        784.9778329243354
+      ],
+      "center_radius_m": 879275.1244641496,
+      "straight": false,
+      "vehicle_offset_m": -0.10326425758022392,
+      "frame": 26,
+      "time_seconds": 1.04
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        2.495661001995944e-05,
+        0.05984546910671072,
+        193.97053141437078
+      ],
+      "right_coefficients": [
+        -2.10212932446164e-05,
+        -0.09350027999749277,
+        785.0682655400806
+      ],
+      "center_radius_m": 102017.54719675764,
+      "straight": false,
+      "vehicle_offset_m": -0.10444980778877086,
+      "frame": 27,
+      "time_seconds": 1.08
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        7.0289984938259896e-06,
+        0.06901417497284192,
+        193.6079469523431
+      ],
+      "right_coefficients": [
+        -1.1781212652158162e-05,
+        -0.09788365013064013,
+        784.9805778055937
+      ],
+      "center_radius_m": 84481.08434362024,
+      "straight": false,
+      "vehicle_offset_m": -0.10292626272096198,
+      "frame": 28,
+      "time_seconds": 1.12
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -2.2580820642810594e-05,
+        0.08616229489159896,
+        191.1729040281999
+      ],
+      "right_coefficients": [
+        -2.936885548944004e-06,
+        -0.10405624980208761,
+        786.1227609639548
+      ],
+      "center_radius_m": 15733.186336107481,
+      "straight": false,
+      "vehicle_offset_m": -0.09748673853426776,
+      "frame": 29,
+      "time_seconds": 1.16
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -5.939438950690583e-05,
+        0.10923005486466252,
+        187.42841580480945
+      ],
+      "right_coefficients": [
+        4.206102928911503e-06,
+        -0.11127402670470453,
+        788.2750771725143
+      ],
+      "center_radius_m": 7274.728826429034,
+      "straight": false,
+      "vehicle_offset_m": -0.09104758947302853,
+      "frame": 30,
+      "time_seconds": 1.2
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -0.00012803241527333296,
+        0.15005071852124602,
+        181.7922607572288
+      ],
+      "right_coefficients": [
+        1.4504879845079437e-05,
+        -0.11969429741019666,
+        790.293999434097
+      ],
+      "center_radius_m": 3536.5285264223326,
+      "straight": false,
+      "vehicle_offset_m": -0.07907873417358387,
+      "frame": 31,
+      "time_seconds": 1.24
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -0.00016040195093031253,
+        0.17443777935511368,
+        177.0370373985052
+      ],
+      "right_coefficients": [
+        2.053479894658139e-05,
+        -0.12617594435246887,
+        792.2346244347049
+      ],
+      "center_radius_m": 2870.575874594997,
+      "straight": false,
+      "vehicle_offset_m": -0.07593125717266493,
+      "frame": 32,
+      "time_seconds": 1.28
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -0.00015018178455539707,
+        0.1737151189728914,
+        175.79220344003105
+      ],
+      "right_coefficients": [
+        2.825518242401063e-05,
+        -0.1323541056584892,
+        793.279240472313
+      ],
+      "center_radius_m": 3292.9018999860086,
+      "straight": false,
+      "vehicle_offset_m": -0.08091736665071465,
+      "frame": 33,
+      "time_seconds": 1.32
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -0.0001300413122583728,
+        0.16435020437093384,
+        176.93108136809167
+      ],
+      "right_coefficients": [
+        3.56554116363414e-05,
+        -0.13569504108253067,
+        792.4661422056646
+      ],
+      "center_radius_m": 4253.647191826171,
+      "straight": false,
+      "vehicle_offset_m": -0.08662161166657824,
+      "frame": 34,
+      "time_seconds": 1.36
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -0.00013671220605593077,
+        0.170161149438063,
+        177.1164045844536
+      ],
+      "right_coefficients": [
+        4.30585965030866e-05,
+        -0.1385127477804686,
+        791.107087329679
+      ],
+      "center_radius_m": 4286.890428863591,
+      "straight": false,
+      "vehicle_offset_m": -0.08913857526804062,
+      "frame": 35,
+      "time_seconds": 1.4
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -0.00011455823751383158,
+        0.15694753071664788,
+        179.57943036707545
+      ],
+      "right_coefficients": [
+        4.7277056042159847e-05,
+        -0.1400274450899343,
+        789.9828131393567
+      ],
+      "center_radius_m": 5967.163492337875,
+      "straight": false,
+      "vehicle_offset_m": -0.09323571154732437,
+      "frame": 36,
+      "time_seconds": 1.44
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -8.228889094533831e-05,
+        0.1365712857830149,
+        182.78736182898857
+      ],
+      "right_coefficients": [
+        4.971731595123189e-05,
+        -0.1427140527794971,
+        790.1371643022662
+      ],
+      "center_radius_m": 12325.89417449446,
+      "straight": false,
+      "vehicle_offset_m": -0.09715282957051367,
+      "frame": 37,
+      "time_seconds": 1.48
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -5.314636927542342e-05,
+        0.12123276572915206,
+        183.893075138047
+      ],
+      "right_coefficients": [
+        4.773572411924189e-05,
+        -0.14481020811845377,
+        791.4641954927644
+      ],
+      "center_radius_m": 74200.2760968171,
+      "straight": false,
+      "vehicle_offset_m": -0.10072657029314304,
+      "frame": 38,
+      "time_seconds": 1.52
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -1.1869693801568447e-05,
+        0.10550416525929464,
+        183.41765130149747
+      ],
+      "right_coefficients": [
+        4.7371523715418076e-05,
+        -0.1495582327535948,
+        793.9971303721188
+      ],
+      "center_radius_m": 11308.401829703249,
+      "straight": false,
+      "vehicle_offset_m": -0.11194055375489007,
+      "frame": 39,
+      "time_seconds": 1.56
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -6.80095793237043e-07,
+        0.1044410764486785,
+        181.1018445630399
+      ],
+      "right_coefficients": [
+        4.270539560224256e-05,
+        -0.1523570229720449,
+        796.8054175318894
+      ],
+      "center_radius_m": 9553.028369979871,
+      "straight": false,
+      "vehicle_offset_m": -0.11312167023206479,
+      "frame": 40,
+      "time_seconds": 1.6
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -1.092723928411778e-05,
+        0.1140593618738856,
+        177.77043588629195
+      ],
+      "right_coefficients": [
+        3.7214507269463996e-05,
+        -0.15399467963965582,
+        799.1254310790936
+      ],
+      "center_radius_m": 15272.383992657908,
+      "straight": false,
+      "vehicle_offset_m": -0.10817522560352409,
+      "frame": 41,
+      "time_seconds": 1.64
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -2.5821716184981988e-05,
+        0.12666918599455212,
+        173.8302028252061
+      ],
+      "right_coefficients": [
+        3.1973185039235725e-05,
+        -0.15546926247568774,
+        801.1444013599667
+      ],
+      "center_radius_m": 65264.13336190013,
+      "straight": false,
+      "vehicle_offset_m": -0.10134916841844809,
+      "frame": 42,
+      "time_seconds": 1.68
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -5.009921609049129e-05,
+        0.14539322278176697,
+        168.87834815710784
+      ],
+      "right_coefficients": [
+        2.494331840086638e-05,
+        -0.15545091838536082,
+        802.9870282679683
+      ],
+      "center_radius_m": 15959.393127433088,
+      "straight": false,
+      "vehicle_offset_m": -0.09323721008649385,
+      "frame": 43,
+      "time_seconds": 1.72
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -8.132255217178192e-05,
+        0.16861161777650635,
+        163.74846721708798
+      ],
+      "right_coefficients": [
+        2.2032034214498058e-05,
+        -0.15606707166396616,
+        803.9427665799042
+      ],
+      "center_radius_m": 6771.344079659688,
+      "straight": false,
+      "vehicle_offset_m": -0.08587440933142311,
+      "frame": 44,
+      "time_seconds": 1.76
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -0.00011011780143101567,
+        0.19189707918383472,
+        158.52779415360848
+      ],
+      "right_coefficients": [
+        1.8475380765323658e-05,
+        -0.15551094395712856,
+        804.7298315550545
+      ],
+      "center_radius_m": 4380.942007424865,
+      "straight": false,
+      "vehicle_offset_m": -0.08208606196394694,
+      "frame": 45,
+      "time_seconds": 1.8
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -0.00015930787819307699,
+        0.22993456644105448,
+        150.89520119777868
+      ],
+      "right_coefficients": [
+        1.4661627249765121e-05,
+        -0.1549921033506657,
+        805.7288175609057
+      ],
+      "center_radius_m": 2775.653276926502,
+      "straight": false,
+      "vehicle_offset_m": -0.07726150885874229,
+      "frame": 46,
+      "time_seconds": 1.84
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -0.00011209661527796981,
+        0.20403107532979367,
+        152.2085743166009
+      ],
+      "right_coefficients": [
+        1.1821814570667715e-05,
+        -0.15402527760754098,
+        805.9615845821771
+      ],
+      "center_radius_m": 4003.7838357220653,
+      "straight": false,
+      "vehicle_offset_m": -0.0811047077352086,
+      "frame": 47,
+      "time_seconds": 1.88
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -0.00010324121893506499,
+        0.20142499209977438,
+        151.24682736390375
+      ],
+      "right_coefficients": [
+        7.265780497781625e-06,
+        -0.15024280619778846,
+        805.0455211094882
+      ],
+      "center_radius_m": 4183.1199401904505,
+      "straight": false,
+      "vehicle_offset_m": -0.08112522490860927,
+      "frame": 48,
+      "time_seconds": 1.92
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -8.599478700812004e-05,
+        0.19199343834306803,
+        151.28491898408072
+      ],
+      "right_coefficients": [
+        3.9132849737325724e-06,
+        -0.14738766010899446,
+        804.3489091314857
+      ],
+      "center_radius_m": 4891.168201428514,
+      "straight": false,
+      "vehicle_offset_m": -0.08048197356913017,
+      "frame": 49,
+      "time_seconds": 1.96
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -4.062466620130297e-05,
+        0.16435320182838603,
+        153.72596098375445
+      ],
+      "right_coefficients": [
+        5.098183895236738e-07,
+        -0.14401200795467511,
+        803.5295254534595
+      ],
+      "center_radius_m": 10008.024491689039,
+      "straight": false,
+      "vehicle_offset_m": -0.08331867252682357,
+      "frame": 50,
+      "time_seconds": 2.0
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        9.92163528142535e-06,
+        0.13319963366532886,
+        156.53767124672726
+      ],
+      "right_coefficients": [
+        -4.3260230229889055e-06,
+        -0.14067448120869078,
+        803.2071058682013
+      ],
+      "center_radius_m": 71747.08486963302,
+      "straight": false,
+      "vehicle_offset_m": -0.08631375471524326,
+      "frame": 51,
+      "time_seconds": 2.04
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        5.499578989490449e-05,
+        0.1066904939782573,
+        158.7158662010635
+      ],
+      "right_coefficients": [
+        -1.0894495998816056e-05,
+        -0.1351916764580933,
+        802.1356780310209
+      ],
+      "center_radius_m": 9103.358997462863,
+      "straight": false,
+      "vehicle_offset_m": -0.09001869983449233,
+      "frame": 52,
+      "time_seconds": 2.08
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        6.392333364072425e-05,
+        0.09858866358415963,
+        159.47247888783517
+      ],
+      "right_coefficients": [
+        -1.3678645058769216e-05,
+        -0.1310607944837901,
+        800.7539471455714
+      ],
+      "center_radius_m": 7990.301750255963,
+      "straight": false,
+      "vehicle_offset_m": -0.08623507663445816,
+      "frame": 53,
+      "time_seconds": 2.12
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        5.120455579734182e-05,
+        0.10152917884099932,
+        159.20144059168095
+      ],
+      "right_coefficients": [
+        -1.3192352120492512e-05,
+        -0.1288313782437103,
+        799.5342518273432
+      ],
+      "center_radius_m": 10561.592432699388,
+      "straight": false,
+      "vehicle_offset_m": -0.07752354706903729,
+      "frame": 54,
+      "time_seconds": 2.16
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -1.0608718816096548e-06,
+        0.12564457022964837,
+        158.04081457826453
+      ],
+      "right_coefficients": [
+        -1.5226136294951873e-05,
+        -0.12222385105428961,
+        796.4047566265269
+      ],
+      "center_radius_m": 24649.67386945422,
+      "straight": false,
+      "vehicle_offset_m": -0.06399856387631964,
+      "frame": 55,
+      "time_seconds": 2.2
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -3.792557338536384e-05,
+        0.14235746121746737,
+        158.00474587671135
+      ],
+      "right_coefficients": [
+        -2.098846250606373e-05,
+        -0.11201262247568897,
+        791.9818086290396
+      ],
+      "center_radius_m": 6814.539832075845,
+      "straight": false,
+      "vehicle_offset_m": -0.05500527608224644,
+      "frame": 56,
+      "time_seconds": 2.24
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -1.4080416889510984e-05,
+        0.12245876069197947,
+        162.89072994393243
+      ],
+      "right_coefficients": [
+        -2.5288305512678492e-05,
+        -0.1015916480952587,
+        786.8642629773927
+      ],
+      "center_radius_m": 10197.694608531332,
+      "straight": false,
+      "vehicle_offset_m": -0.056310376980371515,
+      "frame": 57,
+      "time_seconds": 2.28
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        7.024253910379561e-07,
+        0.10892205771602166,
+        166.2011598962513
+      ],
+      "right_coefficients": [
+        -2.7304896392869418e-05,
+        -0.09495824766239576,
+        783.1986866991222
+      ],
+      "center_radius_m": 15091.43597981173,
+      "straight": false,
+      "vehicle_offset_m": -0.05489379677984287,
+      "frame": 58,
+      "time_seconds": 2.32
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -2.4234961290482373e-06,
+        0.10891632147620478,
+        166.74439814146373
+      ],
+      "right_coefficients": [
+        -3.0323770028424763e-05,
+        -0.08961141438635715,
+        780.5534293939244
+      ],
+      "center_radius_m": 12259.637189587973,
+      "straight": false,
+      "vehicle_offset_m": -0.051003357544979644,
+      "frame": 59,
+      "time_seconds": 2.36
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        1.8951561547968223e-05,
+        0.09313627690768468,
+        169.4293285190344
+      ],
+      "right_coefficients": [
+        -3.110383059647444e-05,
+        -0.08449314044335551,
+        777.3045330169939
+      ],
+      "center_radius_m": 33036.539716134925,
+      "straight": false,
+      "vehicle_offset_m": -0.049740260066090544,
+      "frame": 60,
+      "time_seconds": 2.4
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        3.927551194161478e-05,
+        0.07681639678320754,
+        172.36515929009187
+      ],
+      "right_coefficients": [
+        -3.0573630568782966e-05,
+        -0.08121697666945313,
+        774.8889110865509
+      ],
+      "center_radius_m": 46135.87753544989,
+      "straight": false,
+      "vehicle_offset_m": -0.047997187219568735,
+      "frame": 61,
+      "time_seconds": 2.44
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        5.160937805781082e-05,
+        0.06580554216151076,
+        174.651228587228
+      ],
+      "right_coefficients": [
+        -3.0501742054143316e-05,
+        -0.07670825696209832,
+        771.9968376196908
+      ],
+      "center_radius_m": 19020.09623118637,
+      "straight": false,
+      "vehicle_offset_m": -0.04604292883003551,
+      "frame": 62,
+      "time_seconds": 2.48
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        4.225760356597427e-05,
+        0.06642096966391982,
+        175.61464846222674
+      ],
+      "right_coefficients": [
+        -2.935144310263429e-05,
+        -0.07343926591907093,
+        769.4503140817146
+      ],
+      "center_radius_m": 31106.772635360376,
+      "straight": false,
+      "vehicle_offset_m": -0.038820008197060385,
+      "frame": 63,
+      "time_seconds": 2.52
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        1.7958493442261572e-05,
+        0.07670509205933056,
+        175.05168621959922
+      ],
+      "right_coefficients": [
+        -2.5799393670411334e-05,
+        -0.0718704851012208,
+        767.1442308485125
+      ],
+      "center_radius_m": 51201.88852983185,
+      "straight": false,
+      "vehicle_offset_m": -0.029144498694216328,
+      "frame": 64,
+      "time_seconds": 2.56
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -8.692934913025578e-06,
+        0.09088075162608017,
+        172.96308093437187
+      ],
+      "right_coefficients": [
+        -2.0208378659397265e-05,
+        -0.07391574109792971,
+        766.2737793153206
+      ],
+      "center_radius_m": 13891.044892334123,
+      "straight": false,
+      "vehicle_offset_m": -0.01934755597719045,
+      "frame": 65,
+      "time_seconds": 2.6
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -3.481697162600714e-05,
+        0.10918356598264839,
+        168.45006314845358
+      ],
+      "right_coefficients": [
+        -1.577092224965149e-05,
+        -0.07951804617766003,
+        768.1066576023095
+      ],
+      "center_radius_m": 7936.101314640024,
+      "straight": false,
+      "vehicle_offset_m": -0.01111043774834479,
+      "frame": 66,
+      "time_seconds": 2.64
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -7.912679483245924e-05,
+        0.13807620825627448,
+        162.97800906469908
+      ],
+      "right_coefficients": [
+        -1.0835276246018108e-05,
+        -0.08559044607076122,
+        770.0340398749393
+      ],
+      "center_radius_m": 4462.709508546784,
+      "straight": false,
+      "vehicle_offset_m": -0.0007566629186273253,
+      "frame": 67,
+      "time_seconds": 2.68
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -0.00015894033064257484,
+        0.1880362172841064,
+        155.90798990282062
+      ],
+      "right_coefficients": [
+        -8.288606897017395e-06,
+        -0.08837437101289058,
+        770.6771526622656
+      ],
+      "center_radius_m": 2400.8265008631142,
+      "straight": false,
+      "vehicle_offset_m": 0.012541130767483118,
+      "frame": 68,
+      "time_seconds": 2.72
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -0.00012092921547334265,
+        0.16983164621107136,
+        156.96975850221133
+      ],
+      "right_coefficients": [
+        -7.075510888855919e-06,
+        -0.08868101817421922,
+        770.218506826667
+      ],
+      "center_radius_m": 3136.432702524214,
+      "straight": false,
+      "vehicle_offset_m": 0.004743609592853771,
+      "frame": 69,
+      "time_seconds": 2.76
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -7.588814238706091e-05,
+        0.147293389839484,
+        158.18157566449136
+      ],
+      "right_coefficients": [
+        -7.93384429216392e-06,
+        -0.08879158975126132,
+        770.37067247547
+      ],
+      "center_radius_m": 4789.576272192606,
+      "straight": false,
+      "vehicle_offset_m": -0.0029429697295370203,
+      "frame": 70,
+      "time_seconds": 2.8
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -5.826563975406669e-05,
+        0.14085553834708514,
+        157.20533090357029
+      ],
+      "right_coefficients": [
+        -5.837819797414637e-06,
+        -0.09119562899979947,
+        771.0264821690146
+      ],
+      "center_radius_m": 6262.843820639299,
+      "straight": false,
+      "vehicle_offset_m": -0.005421591793008797,
+      "frame": 71,
+      "time_seconds": 2.84
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -5.679917132888512e-05,
+        0.1433886327361239,
+        155.8657034163144
+      ],
+      "right_coefficients": [
+        -3.7981612085815036e-06,
+        -0.09158902623953268,
+        770.4185780808848
+      ],
+      "center_radius_m": 6625.199064652711,
+      "straight": false,
+      "vehicle_offset_m": -0.006287247937968127,
+      "frame": 72,
+      "time_seconds": 2.88
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -1.8760311676494855e-05,
+        0.11949529591265942,
+        158.85282469740233
+      ],
+      "right_coefficients": [
+        -2.833075248510777e-06,
+        -0.0902021086725365,
+        768.9400186315884
+      ],
+      "center_radius_m": 18592.21842710365,
+      "straight": false,
+      "vehicle_offset_m": -0.009022960557969587,
+      "frame": 73,
+      "time_seconds": 2.92
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        1.0998345864125041e-05,
+        0.10104574327282098,
+        160.9977352992008
+      ],
+      "right_coefficients": [
+        -1.8190013329472806e-06,
+        -0.09001375071428412,
+        767.9491990583332
+      ],
+      "center_radius_m": 43736.25235387318,
+      "straight": false,
+      "vehicle_offset_m": -0.00999303115133379,
+      "frame": 74,
+      "time_seconds": 2.96
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        4.2596939080219616e-05,
+        0.08638807617445785,
+        161.156345516619
+      ],
+      "right_coefficients": [
+        -2.484878107618402e-06,
+        -0.09101435476107597,
+        768.0451388888538
+      ],
+      "center_radius_m": 10008.789538730736,
+      "straight": false,
+      "vehicle_offset_m": -0.013084771267832685,
+      "frame": 75,
+      "time_seconds": 3.0
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        4.634817428571273e-05,
+        0.08595862655576993,
+        159.32312265654744
+      ],
+      "right_coefficients": [
+        -4.928439990487134e-06,
+        -0.09118327396708181,
+        768.0372435212364
+      ],
+      "center_radius_m": 9692.80383566811,
+      "straight": false,
+      "vehicle_offset_m": -0.006202800347607576,
+      "frame": 76,
+      "time_seconds": 3.04
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        4.077136695004565e-05,
+        0.09210985240739346,
+        156.7482928882212
+      ],
+      "right_coefficients": [
+        -1.0061374418980596e-05,
+        -0.08818562727891444,
+        767.1125335859188
+      ],
+      "center_radius_m": 13073.035719979776,
+      "straight": false,
+      "vehicle_offset_m": 0.00027780286357119953,
+      "frame": 77,
+      "time_seconds": 3.08
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -1.4929646202344725e-05,
+        0.11920384334795274,
+        153.52377689467068
+      ],
+      "right_coefficients": [
+        -1.1601939545266823e-05,
+        -0.08643611086175633,
+        765.7064961755498
+      ],
+      "center_radius_m": 15131.734515849967,
+      "straight": false,
+      "vehicle_offset_m": 0.02232264014665178,
+      "frame": 78,
+      "time_seconds": 3.12
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -7.1215810467823e-05,
+        0.15132971651830315,
+        149.26208777598984
+      ],
+      "right_coefficients": [
+        -9.82836815289522e-06,
+        -0.08679563002304982,
+        764.673882334345
+      ],
+      "center_radius_m": 4953.722485777899,
+      "straight": false,
+      "vehicle_offset_m": 0.03779122954127077,
+      "frame": 79,
+      "time_seconds": 3.16
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -0.00011573244075239062,
+        0.18041871219950245,
+        144.5499168837972
+      ],
+      "right_coefficients": [
+        -9.129708709167146e-06,
+        -0.08691863849327014,
+        764.0147336411127
+      ],
+      "center_radius_m": 3215.3358852177826,
+      "straight": false,
+      "vehicle_offset_m": 0.04739306977675305,
+      "frame": 80,
+      "time_seconds": 3.2
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -8.707749107700602e-05,
+        0.1674339358506006,
+        144.7041614459705
+      ],
+      "right_coefficients": [
+        -5.503997159862233e-06,
+        -0.08919429135632384,
+        763.7032864271105
+      ],
+      "center_radius_m": 4336.398287460976,
+      "straight": false,
+      "vehicle_offset_m": 0.04355172135593506,
+      "frame": 81,
+      "time_seconds": 3.24
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -5.4567045216943845e-05,
+        0.1509419709299299,
+        145.5218255780382
+      ],
+      "right_coefficients": [
+        2.465672226679605e-06,
+        -0.09453547078704262,
+        763.9930395526745
+      ],
+      "center_radius_m": 7705.53324618855,
+      "straight": false,
+      "vehicle_offset_m": 0.03930896718385103,
+      "frame": 82,
+      "time_seconds": 3.28
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -3.5209191698479574e-05,
+        0.14125119113727355,
+        145.72077482463035
+      ],
+      "right_coefficients": [
+        1.2096408366735781e-05,
+        -0.10182111590505868,
+        764.9452096335699
+      ],
+      "center_radius_m": 17370.018375655047,
+      "straight": false,
+      "vehicle_offset_m": 0.03767841940467829,
+      "frame": 83,
+      "time_seconds": 3.32
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -2.9874729124301214e-05,
+        0.13848122241349986,
+        146.14567854682252
+      ],
+      "right_coefficients": [
+        1.9770597843000388e-05,
+        -0.10692802109163328,
+        765.2007897834438
+      ],
+      "center_radius_m": 39733.26213064406,
+      "straight": false,
+      "vehicle_offset_m": 0.036852245144073224,
+      "frame": 84,
+      "time_seconds": 3.36
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -3.7343895135292852e-06,
+        0.11999143719656405,
+        149.33927126645338
+      ],
+      "right_coefficients": [
+        2.7035141475003534e-05,
+        -0.11238179541626725,
+        765.7233591225522
+      ],
+      "center_radius_m": 17230.000201734994,
+      "straight": false,
+      "vehicle_offset_m": 0.03486372258254301,
+      "frame": 85,
+      "time_seconds": 3.4
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        3.255746434802491e-05,
+        0.0950342458761438,
+        153.37707028732376
+      ],
+      "right_coefficients": [
+        3.1403558504942954e-05,
+        -0.1171483793075265,
+        766.6179607689255
+      ],
+      "center_radius_m": 6276.872869863699,
+      "straight": false,
+      "vehicle_offset_m": 0.03207059533028065,
+      "frame": 86,
+      "time_seconds": 3.44
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        6.39773254681964e-05,
+        0.07376186673626353,
+        157.72888565100345
+      ],
+      "right_coefficients": [
+        3.519443121527038e-05,
+        -0.1203875084944511,
+        766.7302481329863
+      ],
+      "center_radius_m": 4048.3237378687795,
+      "straight": false,
+      "vehicle_offset_m": 0.026353314654344286,
+      "frame": 87,
+      "time_seconds": 3.48
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        6.072098865310351e-05,
+        0.06955755662604919,
+        160.6368069600765
+      ],
+      "right_coefficients": [
+        3.768380033989005e-05,
+        -0.12387075855726287,
+        767.2957460025892
+      ],
+      "center_radius_m": 4079.8483508834834,
+      "straight": false,
+      "vehicle_offset_m": 0.02979865887484427,
+      "frame": 88,
+      "time_seconds": 3.52
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        4.9666312098106116e-05,
+        0.07187591254103332,
+        162.16168048739806
+      ],
+      "right_coefficients": [
+        3.8061818357563315e-05,
+        -0.1269326822542031,
+        768.3603357958231
+      ],
+      "center_radius_m": 4576.335749323378,
+      "straight": false,
+      "vehicle_offset_m": 0.03332161919466871,
+      "frame": 89,
+      "time_seconds": 3.56
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        9.270770833891059e-06,
+        0.08925728227167037,
+        162.97710111468635
+      ],
+      "right_coefficients": [
+        3.74086375402729e-05,
+        -0.12855042550382856,
+        768.6842551494465
+      ],
+      "center_radius_m": 8600.56344823424,
+      "straight": false,
+      "vehicle_offset_m": 0.042155248177522524,
+      "frame": 90,
+      "time_seconds": 3.6
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -6.978647579640008e-05,
+        0.12755705857853,
+        161.7563460777662
+      ],
+      "right_coefficients": [
+        3.617227547717142e-05,
+        -0.13040017551544136,
+        769.5104238770393
+      ],
+      "center_radius_m": 11943.561854820784,
+      "straight": false,
+      "vehicle_offset_m": 0.05787736081713576,
+      "frame": 91,
+      "time_seconds": 3.64
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -8.343977258374271e-05,
+        0.1336553768901147,
+        162.6358264884551
+      ],
+      "right_coefficients": [
+        3.4244918231131084e-05,
+        -0.13287817231096793,
+        770.989446830007
+      ],
+      "center_radius_m": 8160.9503305060325,
+      "straight": false,
+      "vehicle_offset_m": 0.0587132387729189,
+      "frame": 92,
+      "time_seconds": 3.68
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -5.8858811155537e-05,
+        0.11751016450878704,
+        166.09256125505715
+      ],
+      "right_coefficients": [
+        3.467303838207733e-05,
+        -0.137798622628307,
+        773.3383630658761
+      ],
+      "center_radius_m": 16599.638337096912,
+      "straight": false,
+      "vehicle_offset_m": 0.05208903425760853,
+      "frame": 93,
+      "time_seconds": 3.72
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -4.014619306775364e-05,
+        0.10738684626667594,
+        167.32337097321562
+      ],
+      "right_coefficients": [
+        3.3370207363568835e-05,
+        -0.1437284752261371,
+        777.0531360730818
+      ],
+      "center_radius_m": 59249.589869423035,
+      "straight": false,
+      "vehicle_offset_m": 0.046877272162073894,
+      "frame": 94,
+      "time_seconds": 3.76
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -3.685379419205986e-05,
+        0.10650121670608423,
+        167.2757405276781
+      ],
+      "right_coefficients": [
+        2.8621933913082298e-05,
+        -0.1489665411642355,
+        781.4953876548761
+      ],
+      "center_radius_m": 48771.05232873805,
+      "straight": false,
+      "vehicle_offset_m": 0.04428847929143515,
+      "frame": 95,
+      "time_seconds": 3.8
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -4.77041883042157e-05,
+        0.11594594622156276,
+        165.47759292206368
+      ],
+      "right_coefficients": [
+        2.5047173172237664e-05,
+        -0.15452499728764052,
+        785.9808445848888
+      ],
+      "center_radius_m": 17719.913473085846,
+      "straight": false,
+      "vehicle_offset_m": 0.042007518918331904,
+      "frame": 96,
+      "time_seconds": 3.84
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -5.9842461188201195e-05,
+        0.126305234985509,
+        163.42158209960127
+      ],
+      "right_coefficients": [
+        2.7403141941514466e-05,
+        -0.16349389207875747,
+        790.7852641270946
+      ],
+      "center_radius_m": 12376.459729529273,
+      "straight": false,
+      "vehicle_offset_m": 0.03947706500765475,
+      "frame": 97,
+      "time_seconds": 3.88
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -7.338307754999176e-05,
+        0.13778323961340913,
+        160.95182230862153
+      ],
+      "right_coefficients": [
+        2.8729907144998275e-05,
+        -0.17150474698189666,
+        795.5379842304374
+      ],
+      "center_radius_m": 8991.259689256927,
+      "straight": false,
+      "vehicle_offset_m": 0.03714913704301112,
+      "frame": 98,
+      "time_seconds": 3.92
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -4.9245854883372995e-05,
+        0.12617079010275417,
+        161.10234550895726
+      ],
+      "right_coefficients": [
+        3.305737410141252e-05,
+        -0.1813747939349688,
+        800.4712244263228
+      ],
+      "center_radius_m": 24800.606181516017,
+      "straight": false,
+      "vehicle_offset_m": 0.03030360501370156,
+      "frame": 99,
+      "time_seconds": 3.96
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -1.835778884042608e-05,
+        0.1088335715169198,
+        163.3195309188818
+      ],
+      "right_coefficients": [
+        3.502879537159472e-05,
+        -0.18700243234998012,
+        803.3836873745122
+      ],
+      "center_radius_m": 24082.489960877523,
+      "straight": false,
+      "vehicle_offset_m": 0.02143764283547826,
+      "frame": 100,
+      "time_seconds": 4.0
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -3.7879158210503523e-05,
+        0.11514704553833671,
+        165.00818847323018
+      ],
+      "right_coefficients": [
+        3.722275544237826e-05,
+        -0.18856715293840667,
+        803.8173878392377
+      ],
+      "center_radius_m": 611643.9196928302,
+      "straight": false,
+      "vehicle_offset_m": 0.02279587910561657,
+      "frame": 101,
+      "time_seconds": 4.04
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -7.212493282202372e-05,
+        0.12950525417240588,
+        166.51779560214067
+      ],
+      "right_coefficients": [
+        3.713513863495554e-05,
+        -0.18696137433608082,
+        802.9674121407933
+      ],
+      "center_radius_m": 11474.633751201432,
+      "straight": false,
+      "vehicle_offset_m": 0.025536543790597766,
+      "frame": 102,
+      "time_seconds": 4.08
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -0.00011726687131909992,
+        0.15341146924151974,
+        166.88764588228284
+      ],
+      "right_coefficients": [
+        3.3508472340486336e-05,
+        -0.18228540240662222,
+        801.320969248005
+      ],
+      "center_radius_m": 4793.667955096511,
+      "straight": false,
+      "vehicle_offset_m": 0.025687389793019138,
+      "frame": 103,
+      "time_seconds": 4.12
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -0.0001666919979088298,
+        0.1819681630051251,
+        165.20525461738688
+      ],
+      "right_coefficients": [
+        2.841841054382747e-05,
+        -0.17960028513933707,
+        801.385970424252
+      ],
+      "center_radius_m": 2903.888854940881,
+      "straight": false,
+      "vehicle_offset_m": 0.028063495795463064,
+      "frame": 104,
+      "time_seconds": 4.16
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -0.00019274210796949799,
+        0.2018496039092615,
+        162.41146667532436
+      ],
+      "right_coefficients": [
+        2.2305848158545517e-05,
+        -0.17895918662626875,
+        803.0843067977866
+      ],
+      "center_radius_m": 2355.975901179762,
+      "straight": false,
+      "vehicle_offset_m": 0.025662680323096966,
+      "frame": 105,
+      "time_seconds": 4.2
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -0.00015203294227220885,
+        0.18301933837061715,
+        163.2788175621352
+      ],
+      "right_coefficients": [
+        1.6763571963499297e-05,
+        -0.17909676151050008,
+        805.2689514223046
+      ],
+      "center_radius_m": 2968.3521514183954,
+      "straight": false,
+      "vehicle_offset_m": 0.013914314436365123,
+      "frame": 106,
+      "time_seconds": 4.24
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -0.00010286933406714087,
+        0.15846809853554175,
+        164.66052646064557
+      ],
+      "right_coefficients": [
+        7.298786916999543e-06,
+        -0.17683697090720227,
+        807.1473953936945
+      ],
+      "center_radius_m": 4201.205458970061,
+      "straight": false,
+      "vehicle_offset_m": 0.0031947178917937826,
+      "frame": 107,
+      "time_seconds": 4.28
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -7.75369690359773e-05,
+        0.14585189438466398,
+        165.59061595809976
+      ],
+      "right_coefficients": [
+        -8.403782857796349e-07,
+        -0.1737447387625407,
+        808.2572565027014
+      ],
+      "center_radius_m": 5122.722607318358,
+      "straight": false,
+      "vehicle_offset_m": -0.004141681085343004,
+      "frame": 108,
+      "time_seconds": 4.32
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -3.807487925491263e-05,
+        0.12140590361942429,
+        168.88196668333146
+      ],
+      "right_coefficients": [
+        -1.1348745664000527e-05,
+        -0.16703134404291992,
+        807.9254358366651
+      ],
+      "center_radius_m": 8123.588025273775,
+      "straight": false,
+      "vehicle_offset_m": -0.01113782618875529,
+      "frame": 109,
+      "time_seconds": 4.36
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        1.8643758450172724e-05,
+        0.08347390873364217,
+        174.60792367379136
+      ],
+      "right_coefficients": [
+        -2.0172128380858417e-05,
+        -0.1598089316187012,
+        806.8057085176138
+      ],
+      "center_radius_m": 262689.3206270321,
+      "straight": false,
+      "vehicle_offset_m": -0.01873205535092985,
+      "frame": 110,
+      "time_seconds": 4.4
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        6.362573074150474e-05,
+        0.05394022136805213,
+        179.26817529423127
+      ],
+      "right_coefficients": [
+        -2.981294714789424e-05,
+        -0.1517310722353514,
+        805.5679646450752
+      ],
+      "center_radius_m": 11873.608345492985,
+      "straight": false,
+      "vehicle_offset_m": -0.026931331467166853,
+      "frame": 111,
+      "time_seconds": 4.44
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        9.208287725054483e-05,
+        0.03572529684713055,
+        182.18257861364916
+      ],
+      "right_coefficients": [
+        -3.8175574792103474e-05,
+        -0.14466632094164023,
+        804.7682161550779
+      ],
+      "center_radius_m": 7447.531581980385,
+      "straight": false,
+      "vehicle_offset_m": -0.03442620878500822,
+      "frame": 112,
+      "time_seconds": 4.48
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        8.266019896756611e-05,
+        0.035906151366369814,
+        183.51311235335905
+      ],
+      "right_coefficients": [
+        -4.612834130208088e-05,
+        -0.13760970609797693,
+        804.0343816090855
+      ],
+      "center_radius_m": 10989.862721238467,
+      "straight": false,
+      "vehicle_offset_m": -0.032303294561256524,
+      "frame": 113,
+      "time_seconds": 4.52
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        6.923927987004906e-05,
+        0.04170764372537603,
+        182.64756561043382
+      ],
+      "right_coefficients": [
+        -5.067197751720186e-05,
+        -0.13562558742351816,
+        805.4749092072864
+      ],
+      "center_radius_m": 21623.209330492748,
+      "straight": false,
+      "vehicle_offset_m": -0.030576157048036956,
+      "frame": 114,
+      "time_seconds": 4.56
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        2.5583507576727098e-05,
+        0.06258779969174125,
+        180.49495463321932
+      ],
+      "right_coefficients": [
+        -5.350502186127715e-05,
+        -0.13415435116974608,
+        806.7488185472888
+      ],
+      "center_radius_m": 14379.548559255187,
+      "straight": false,
+      "vehicle_offset_m": -0.021558501889721818,
+      "frame": 115,
+      "time_seconds": 4.6
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -3.191106324585952e-05,
+        0.09318223676939416,
+        177.39143406348276
+      ],
+      "right_coefficients": [
+        -5.734947565824632e-05,
+        -0.1303352303689107,
+        806.9494757428743
+      ],
+      "center_radius_m": 4498.296144083335,
+      "straight": false,
+      "vehicle_offset_m": -0.013169917257988235,
+      "frame": 116,
+      "time_seconds": 4.64
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -4.733089905882577e-05,
+        0.10077165946924693,
+        176.88786693267815
+      ],
+      "right_coefficients": [
+        -5.530138251757334e-05,
+        -0.12938178765237437,
+        806.9499139123525
+      ],
+      "center_radius_m": 3912.267798985769,
+      "straight": false,
+      "vehicle_offset_m": -0.01400599937193709,
+      "frame": 117,
+      "time_seconds": 4.68
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -3.341517300577964e-05,
+        0.09220340088129005,
+        178.15840055380815
+      ],
+      "right_coefficients": [
+        -5.3677220600498854e-05,
+        -0.1280741244558795,
+        806.7329290648014
+      ],
+      "center_radius_m": 4610.248556565298,
+      "straight": false,
+      "vehicle_offset_m": -0.020390338378223512,
+      "frame": 118,
+      "time_seconds": 4.72
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -3.498974467234988e-05,
+        0.09040125043336808,
+        180.1599589333208
+      ],
+      "right_coefficients": [
+        -5.319559193950397e-05,
+        -0.1229235940638632,
+        804.4680537611679
+      ],
+      "center_radius_m": 4553.092171894516,
+      "straight": false,
+      "vehicle_offset_m": -0.025112514386613622,
+      "frame": 119,
+      "time_seconds": 4.76
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -1.3853715370014007e-05,
+        0.07250825823159174,
+        185.15738622181485
+      ],
+      "right_coefficients": [
+        -5.343261529197172e-05,
+        -0.11551494211006882,
+        801.0250452509667
+      ],
+      "center_radius_m": 5967.147974386104,
+      "straight": false,
+      "vehicle_offset_m": -0.03273227467974339,
+      "frame": 120,
+      "time_seconds": 4.8
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        6.1390932049190466e-06,
+        0.053918008340693435,
+        190.67892244700542
+      ],
+      "right_coefficients": [
+        -5.169893119671581e-05,
+        -0.1094521833702248,
+        797.7324144335873
+      ],
+      "center_radius_m": 8812.59829564712,
+      "straight": false,
+      "vehicle_offset_m": -0.039632987089948446,
+      "frame": 121,
+      "time_seconds": 4.84
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        1.7728950329967003e-05,
+        0.04139809559675754,
+        194.95421954178994
+      ],
+      "right_coefficients": [
+        -4.754286075594327e-05,
+        -0.10704015651372756,
+        795.8626787161477
+      ],
+      "center_radius_m": 13466.751689491128,
+      "straight": false,
+      "vehicle_offset_m": -0.04554347089969923,
+      "frame": 122,
+      "time_seconds": 4.88
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        2.013497558311135e-05,
+        0.03689657332563735,
+        197.45846375187227
+      ],
+      "right_coefficients": [
+        -3.9828045979970366e-05,
+        -0.10792946208293012,
+        794.9430712830845
+      ],
+      "center_radius_m": 20387.551824497736,
+      "straight": false,
+      "vehicle_offset_m": -0.05179101981271556,
+      "frame": 123,
+      "time_seconds": 4.92
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        2.509178035890926e-05,
+        0.03506734267353669,
+        198.24105275343896
+      ],
+      "right_coefficients": [
+        -2.9636156731668993e-05,
+        -0.11372520415453166,
+        796.2506441260804
+      ],
+      "center_radius_m": 88348.55025228974,
+      "straight": false,
+      "vehicle_offset_m": -0.06097857617072463,
+      "frame": 124,
+      "time_seconds": 4.96
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -9.695415210015775e-06,
+        0.05271544842259131,
+        197.69556511392346
+      ],
+      "right_coefficients": [
+        -2.001962285290282e-05,
+        -0.1189584626062522,
+        797.3750812706483
+      ],
+      "center_radius_m": 13511.569738546666,
+      "straight": false,
+      "vehicle_offset_m": -0.060816325551002415,
+      "frame": 125,
+      "time_seconds": 5.0
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -3.8230802046616044e-05,
+        0.06988381429370466,
+        196.41666961357532
+      ],
+      "right_coefficients": [
+        -1.2102966832389465e-05,
+        -0.1240008856947535,
+        798.8591765434488
+      ],
+      "center_radius_m": 7976.808778214421,
+      "straight": false,
+      "vehicle_offset_m": -0.06371347044816822,
+      "frame": 126,
+      "time_seconds": 5.04
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -0.000100266350811877,
+        0.10481722509449819,
+        193.66396517976042
+      ],
+      "right_coefficients": [
+        -5.864384905103379e-07,
+        -0.1310278439593307,
+        800.2849069329936
+      ],
+      "center_radius_m": 3981.263655181765,
+      "straight": false,
+      "vehicle_offset_m": -0.060000999018781566,
+      "frame": 127,
+      "time_seconds": 5.08
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -9.041007501854725e-05,
+        0.10228610558342575,
+        194.610293707973
+      ],
+      "right_coefficients": [
+        6.982143076951103e-06,
+        -0.13540407455022332,
+        801.1221613243363
+      ],
+      "center_radius_m": 4812.688854139768,
+      "straight": false,
+      "vehicle_offset_m": -0.07204937267849852,
+      "frame": 128,
+      "time_seconds": 5.12
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -5.6781377089774124e-05,
+        0.08226666958738788,
+        198.71099903132102
+      ],
+      "right_coefficients": [
+        1.07603170406732e-05,
+        -0.1363435581248303,
+        800.7729879751366
+      ],
+      "center_radius_m": 8724.266051369967,
+      "straight": false,
+      "vehicle_offset_m": -0.08486686774857839,
+      "frame": 129,
+      "time_seconds": 5.16
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -5.066151922194232e-05,
+        0.07946241467465981,
+        200.55653657438108
+      ],
+      "right_coefficients": [
+        1.1422672991948363e-05,
+        -0.13490496708290256,
+        799.8749950796883
+      ],
+      "center_radius_m": 10232.118037781349,
+      "straight": false,
+      "vehicle_offset_m": -0.09328476268091127,
+      "frame": 130,
+      "time_seconds": 5.2
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -3.981942086080009e-05,
+        0.07317043740126107,
+        202.86409017429807
+      ],
+      "right_coefficients": [
+        1.4267336907613506e-05,
+        -0.13514196624324099,
+        799.0436111495652
+      ],
+      "center_radius_m": 15712.692943182134,
+      "straight": false,
+      "vehicle_offset_m": -0.10074395973105792,
+      "frame": 131,
+      "time_seconds": 5.24
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -3.0063039592880996e-06,
+        0.04949047832416547,
+        206.99305828465248
+      ],
+      "right_coefficients": [
+        1.3666197288978234e-05,
+        -0.13486708255492788,
+        798.9922172957657
+      ],
+      "center_radius_m": 37663.102784027345,
+      "straight": false,
+      "vehicle_offset_m": -0.10839311547093217,
+      "frame": 132,
+      "time_seconds": 5.28
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        1.1115459052092154e-05,
+        0.044244639531479585,
+        206.82960775912764
+      ],
+      "right_coefficients": [
+        1.5717003850243026e-05,
+        -0.1395510610769129,
+        801.2720094499194
+      ],
+      "center_radius_m": 14962.533024214516,
+      "straight": false,
+      "vehicle_offset_m": -0.1140362566274407,
+      "frame": 133,
+      "time_seconds": 5.32
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        3.344436106244973e-05,
+        0.034876802853259774,
+        205.7782669482812
+      ],
+      "right_coefficients": [
+        1.615033963258088e-05,
+        -0.1466056103855147,
+        805.6137612725507
+      ],
+      "center_radius_m": 8095.193228160415,
+      "straight": false,
+      "vehicle_offset_m": -0.11809372929421928,
+      "frame": 134,
+      "time_seconds": 5.36
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        4.96528656617898e-05,
+        0.03283328100287234,
+        202.4670098921474
+      ],
+      "right_coefficients": [
+        1.606445191950315e-05,
+        -0.15467738277347248,
+        810.833187204217
+      ],
+      "center_radius_m": 6109.141440665642,
+      "straight": false,
+      "vehicle_offset_m": -0.1224919993958554,
+      "frame": 135,
+      "time_seconds": 5.4
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        6.721841342108806e-05,
+        0.029676905618801215,
+        199.96700401937073
+      ],
+      "right_coefficients": [
+        1.6520545832898185e-05,
+        -0.16206036244691704,
+        815.3522688485045
+      ],
+      "center_radius_m": 4794.351363048616,
+      "straight": false,
+      "vehicle_offset_m": -0.1285648944916216,
+      "frame": 136,
+      "time_seconds": 5.44
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        6.137109416222566e-05,
+        0.03605408186468905,
+        197.59825255027027
+      ],
+      "right_coefficients": [
+        1.57701370392082e-05,
+        -0.16634171995605448,
+        818.4057746169187
+      ],
+      "center_radius_m": 5204.418994052863,
+      "straight": false,
+      "vehicle_offset_m": -0.12816990134606027,
+      "frame": 137,
+      "time_seconds": 5.48
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        2.2808293414313295e-05,
+        0.05552458857721597,
+        196.19446087273909
+      ],
+      "right_coefficients": [
+        1.5910200091993337e-05,
+        -0.1672384123931564,
+        818.8575361185854
+      ],
+      "center_radius_m": 10369.283361215204,
+      "straight": false,
+      "vehicle_offset_m": -0.12005476172192524,
+      "frame": 138,
+      "time_seconds": 5.52
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -7.565440767640551e-05,
+        0.1048984103022048,
+        193.16961806201203
+      ],
+      "right_coefficients": [
+        1.6082786185987242e-05,
+        -0.16505698362262464,
+        817.2403476106864
+      ],
+      "center_radius_m": 6740.0150568434865,
+      "straight": false,
+      "vehicle_offset_m": -0.099185473857624,
+      "frame": 139,
+      "time_seconds": 5.56
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -7.203994112303116e-05,
+        0.10134368255939749,
+        195.7094427037198
+      ],
+      "right_coefficients": [
+        1.635569526334718e-05,
+        -0.1609544519496087,
+        814.508560933138
+      ],
+      "center_radius_m": 7210.482493666572,
+      "straight": false,
+      "vehicle_offset_m": -0.10394133787345956,
+      "frame": 140,
+      "time_seconds": 5.6
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -5.1332081814287694e-05,
+        0.08618391832423372,
+        200.29433724282762
+      ],
+      "right_coefficients": [
+        1.829993279552169e-05,
+        -0.15853369890419783,
+        812.1017330636748
+      ],
+      "center_radius_m": 12154.903614026314,
+      "straight": false,
+      "vehicle_offset_m": -0.11124353080291326,
+      "frame": 141,
+      "time_seconds": 5.64
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -5.511957756878146e-05,
+        0.08734034264751209,
+        202.36148044457616
+      ],
+      "right_coefficients": [
+        2.054724729884248e-05,
+        -0.15623659202688453,
+        809.9454380417033
+      ],
+      "center_radius_m": 11613.376166758437,
+      "straight": false,
+      "vehicle_offset_m": -0.11635503450323467,
+      "frame": 142,
+      "time_seconds": 5.68
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -6.731157205248786e-05,
+        0.09466866964451637,
+        203.0313649673742
+      ],
+      "right_coefficients": [
+        2.459722428369937e-05,
+        -0.15794195081214754,
+        809.803015770904
+      ],
+      "center_radius_m": 9399.732504906675,
+      "straight": false,
+      "vehicle_offset_m": -0.12095713637359268,
+      "frame": 143,
+      "time_seconds": 5.72
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -4.3844704271195665e-05,
+        0.07867833378281315,
+        206.5973685981226
+      ],
+      "right_coefficients": [
+        2.755137591243484e-05,
+        -0.1594960762969747,
+        809.9453156880143
+      ],
+      "center_radius_m": 24641.795747490967,
+      "straight": false,
+      "vehicle_offset_m": -0.12839456024196375,
+      "frame": 144,
+      "time_seconds": 5.76
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -1.9836581827592993e-05,
+        0.06425914167044838,
+        208.66648161414088
+      ],
+      "right_coefficients": [
+        2.9814226402402112e-05,
+        -0.16435394363405753,
+        812.502251813957
+      ],
+      "center_radius_m": 40239.15205606991,
+      "straight": false,
+      "vehicle_offset_m": -0.1356015870172157,
+      "frame": 145,
+      "time_seconds": 5.8
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        4.1581646443040445e-06,
+        0.05105480947185287,
+        209.64652671268757
+      ],
+      "right_coefficients": [
+        3.252046812281851e-05,
+        -0.17204613091238702,
+        816.7165300805066
+      ],
+      "center_radius_m": 10946.102102790941,
+      "straight": false,
+      "vehicle_offset_m": -0.1421153508162935,
+      "frame": 146,
+      "time_seconds": 5.84
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        2.658234706317965e-05,
+        0.038642010567254956,
+        210.6452971044038
+      ],
+      "right_coefficients": [
+        3.167295312502991e-05,
+        -0.17789324044831192,
+        821.1076941180129
+      ],
+      "center_radius_m": 6891.8325622708435,
+      "straight": false,
+      "vehicle_offset_m": -0.14912304577959137,
+      "frame": 147,
+      "time_seconds": 5.88
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        4.8684449350561626e-05,
+        0.028798189827643258,
+        211.23578474479189
+      ],
+      "right_coefficients": [
+        2.9053725423578705e-05,
+        -0.18208455317200187,
+        825.1799376492653
+      ],
+      "center_radius_m": 5164.551825913253,
+      "straight": false,
+      "vehicle_offset_m": -0.15976383851916412,
+      "frame": 148,
+      "time_seconds": 5.92
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        5.744228444876546e-05,
+        0.02574359289338065,
+        211.55918535801015
+      ],
+      "right_coefficients": [
+        2.3274819787863242e-05,
+        -0.18267681072256592,
+        828.0362106839043
+      ],
+      "center_radius_m": 4973.952075891799,
+      "straight": false,
+      "vehicle_offset_m": -0.16778678366364466,
+      "frame": 149,
+      "time_seconds": 5.96
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        3.234721599621357e-05,
+        0.0367739587588975,
+        211.77433726797847
+      ],
+      "right_coefficients": [
+        1.3465516585548038e-05,
+        -0.17894664254986542,
+        829.1556575371794
+      ],
+      "center_radius_m": 8763.803238773433,
+      "straight": false,
+      "vehicle_offset_m": -0.16450761005937614,
+      "frame": 150,
+      "time_seconds": 6.0
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -3.8129993861510207e-06,
+        0.05396585041291396,
+        211.90019167132579
+      ],
+      "right_coefficients": [
+        -1.6023542840690068e-06,
+        -0.16930711222737682,
+        828.0249250935301
+      ],
+      "center_radius_m": 74143.14521281845,
+      "straight": false,
+      "vehicle_offset_m": -0.15900747154882613,
+      "frame": 151,
+      "time_seconds": 6.04
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -4.642588602642212e-05,
+        0.07655041315655327,
+        210.318766338641
+      ],
+      "right_coefficients": [
+        -1.3050308939074967e-05,
+        -0.162791300759867,
+        827.6849422591831
+      ],
+      "center_radius_m": 6751.1763332477985,
+      "straight": false,
+      "vehicle_offset_m": -0.15151442700000425,
+      "frame": 152,
+      "time_seconds": 6.08
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -8.393590953055612e-05,
+        0.09983538552102511,
+        207.15504309182973
+      ],
+      "right_coefficients": [
+        -2.6281240106492107e-05,
+        -0.15708240207135682,
+        828.6718020159828
+      ],
+      "center_radius_m": 3643.3400959769083,
+      "straight": false,
+      "vehicle_offset_m": -0.14653551607927906,
+      "frame": 153,
+      "time_seconds": 6.12
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -8.230877457597192e-05,
+        0.10321009613330731,
+        205.67477807380223
+      ],
+      "right_coefficients": [
+        -3.613066978857721e-05,
+        -0.15250511932826336,
+        829.5751627444494
+      ],
+      "center_radius_m": 3390.4202611694936,
+      "straight": false,
+      "vehicle_offset_m": -0.15163013768208974,
+      "frame": 154,
+      "time_seconds": 6.16
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -5.6709043714677916e-05,
+        0.09038099799824575,
+        206.12561901411445
+      ],
+      "right_coefficients": [
+        -4.64211047147553e-05,
+        -0.1484206029436598,
+        831.1372576593318
+      ],
+      "center_radius_m": 3893.640464178439,
+      "straight": false,
+      "vehicle_offset_m": -0.15837146150631812,
+      "frame": 155,
+      "time_seconds": 6.2
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -4.3307849534167e-05,
+        0.08467642783545817,
+        205.96650511934314
+      ],
+      "right_coefficients": [
+        -5.661445426335794e-05,
+        -0.14302763956977402,
+        831.9829980187935
+      ],
+      "center_radius_m": 4018.6089681856274,
+      "straight": false,
+      "vehicle_offset_m": -0.1639682097361226,
+      "frame": 156,
+      "time_seconds": 6.24
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -4.31354101148601e-05,
+        0.08577481544779564,
+        205.92196556467275
+      ],
+      "right_coefficients": [
+        -6.598446125698992e-05,
+        -0.1366158597101216,
+        832.1886259873787
+      ],
+      "center_radius_m": 3679.9071444709284,
+      "straight": false,
+      "vehicle_offset_m": -0.169898172158031,
+      "frame": 157,
+      "time_seconds": 6.28
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -2.7721768049959564e-05,
+        0.07596446694550892,
+        207.43373230656047
+      ],
+      "right_coefficients": [
+        -7.098312934230428e-05,
+        -0.13307358435730152,
+        833.0458130983872
+      ],
+      "center_radius_m": 4068.149002315291,
+      "straight": false,
+      "vehicle_offset_m": -0.17767716590064916,
+      "frame": 158,
+      "time_seconds": 6.32
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        1.7373574047931563e-06,
+        0.05527625629865068,
+        211.6632349233443
+      ],
+      "right_coefficients": [
+        -7.47726886807249e-05,
+        -0.1281577908132695,
+        832.9556345415052
+      ],
+      "center_radius_m": 5497.823746263577,
+      "straight": false,
+      "vehicle_offset_m": -0.18962033092556868,
+      "frame": 159,
+      "time_seconds": 6.36
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        2.8296964333135604e-05,
+        0.038580596420285926,
+        215.65367846883376
+      ],
+      "right_coefficients": [
+        -7.679017125693123e-05,
+        -0.12266291027194764,
+        832.1467239726298
+      ],
+      "center_radius_m": 8279.977570845118,
+      "straight": false,
+      "vehicle_offset_m": -0.20611143318267264,
+      "frame": 160,
+      "time_seconds": 6.4
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        6.616776995459574e-06,
+        0.04471512380013506,
+        218.50754304000608
+      ],
+      "right_coefficients": [
+        -7.480171129344331e-05,
+        -0.1173907684159251,
+        830.3156750792315
+      ],
+      "center_radius_m": 5888.847726486772,
+      "straight": false,
+      "vehicle_offset_m": -0.21170638130519615,
+      "frame": 161,
+      "time_seconds": 6.44
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -1.5170416099792214e-05,
+        0.054241627095179656,
+        219.75508384430344
+      ],
+      "right_coefficients": [
+        -7.025178890570872e-05,
+        -0.11505236605311932,
+        829.4461615475813
+      ],
+      "center_radius_m": 4700.610438333731,
+      "straight": false,
+      "vehicle_offset_m": -0.2185177082148275,
+      "frame": 162,
+      "time_seconds": 6.48
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -5.8686424947788906e-05,
+        0.0765127847456562,
+        219.46532526454365
+      ],
+      "right_coefficients": [
+        -6.287307917609541e-05,
+        -0.11377477237035423,
+        828.0843862808001
+      ],
+      "center_radius_m": 3303.32730728986,
+      "straight": false,
+      "vehicle_offset_m": -0.22061115527024605,
+      "frame": 163,
+      "time_seconds": 6.52
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -9.398122684420848e-05,
+        0.09658917899180477,
+        218.93106459417305
+      ],
+      "right_coefficients": [
+        -5.2885152512507546e-05,
+        -0.11339217011910367,
+        826.1920764366605
+      ],
+      "center_radius_m": 2734.1697323679537,
+      "straight": false,
+      "vehicle_offset_m": -0.22542867833892236,
+      "frame": 164,
+      "time_seconds": 6.56
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -6.792998925631024e-05,
+        0.08154805691174129,
+        222.32685942062736
+      ],
+      "right_coefficients": [
+        -4.3379845224378415e-05,
+        -0.11194332396800705,
+        823.3477943566634
+      ],
+      "center_radius_m": 3607.356966545977,
+      "straight": false,
+      "vehicle_offset_m": -0.2391452959408906,
+      "frame": 165,
+      "time_seconds": 6.6
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -6.400102070984764e-05,
+        0.07880221855248896,
+        224.5914681560183
+      ],
+      "right_coefficients": [
+        -3.073780659538429e-05,
+        -0.11159701878072328,
+        819.7095810415215
+      ],
+      "center_radius_m": 4238.1941046343745,
+      "straight": false,
+      "vehicle_offset_m": -0.24742987224940124,
+      "frame": 166,
+      "time_seconds": 6.64
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -6.0356742205834684e-05,
+        0.07929354937242156,
+        224.9624521694285
+      ],
+      "right_coefficients": [
+        -1.8685535002276918e-05,
+        -0.11313380522265165,
+        817.0828126024605
+      ],
+      "center_radius_m": 5079.685027203606,
+      "straight": false,
+      "vehicle_offset_m": -0.2541465583515684,
+      "frame": 167,
+      "time_seconds": 6.68
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -3.829595958403375e-05,
+        0.06607650498525959,
+        227.15709544222776
+      ],
+      "right_coefficients": [
+        -6.2015546960845415e-06,
+        -0.11626894610047436,
+        814.9983011664659
+      ],
+      "center_radius_m": 9022.902743231352,
+      "straight": false,
+      "vehicle_offset_m": -0.2592867536419246,
+      "frame": 168,
+      "time_seconds": 6.72
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -1.552531900160777e-05,
+        0.05388175678471205,
+        228.46621225110206
+      ],
+      "right_coefficients": [
+        7.802681357566773e-06,
+        -0.12182133278950728,
+        813.8716603296358
+      ],
+      "center_radius_m": 51988.15617627461,
+      "straight": false,
+      "vehicle_offset_m": -0.26430488038486066,
+      "frame": 169,
+      "time_seconds": 6.76
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        3.009505771657541e-07,
+        0.04486984189285595,
+        229.8993554753364
+      ],
+      "right_coefficients": [
+        1.9937763865622986e-05,
+        -0.12790510215388295,
+        813.4565204041353
+      ],
+      "center_radius_m": 19837.213824324816,
+      "straight": false,
+      "vehicle_offset_m": -0.2681815445983099,
+      "frame": 170,
+      "time_seconds": 6.8
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        6.48089882236468e-06,
+        0.04252730607618285,
+        230.44292901429526
+      ],
+      "right_coefficients": [
+        2.9197514719223984e-05,
+        -0.13299417848289125,
+        813.2430770667443
+      ],
+      "center_radius_m": 11252.64965063855,
+      "straight": false,
+      "vehicle_offset_m": -0.27130686043213037,
+      "frame": 171,
+      "time_seconds": 6.84
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -3.4870931322335e-06,
+        0.049046127723562885,
+        229.4699143653879
+      ],
+      "right_coefficients": [
+        3.653419449209807e-05,
+        -0.13973940853932912,
+        814.5566172916494
+      ],
+      "center_radius_m": 12148.649054505497,
+      "straight": false,
+      "vehicle_offset_m": -0.26920044540556676,
+      "frame": 172,
+      "time_seconds": 6.88
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -1.9078777686632962e-05,
+        0.05897698560403074,
+        227.93232325002498
+      ],
+      "right_coefficients": [
+        4.105247145994113e-05,
+        -0.14595251348663663,
+        816.3083279823107
+      ],
+      "center_radius_m": 18270.958712470907,
+      "straight": false,
+      "vehicle_offset_m": -0.2653458516151873,
+      "frame": 173,
+      "time_seconds": 6.92
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -4.902323541183801e-05,
+        0.07708538074000673,
+        225.79212739380304
+      ],
+      "right_coefficients": [
+        4.530745320192245e-05,
+        -0.1518541074381492,
+        818.0253345017884
+      ],
+      "center_radius_m": 108049.07155797498,
+      "straight": false,
+      "vehicle_offset_m": -0.2603029879273553,
+      "frame": 174,
+      "time_seconds": 6.96
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -9.061608207754649e-05,
+        0.10021128603396968,
+        223.7191813566332
+      ],
+      "right_coefficients": [
+        4.923809617799285e-05,
+        -0.15708792800186117,
+        819.3456067443916
+      ],
+      "center_radius_m": 9703.194916510945,
+      "straight": false,
+      "vehicle_offset_m": -0.2523917736923283,
+      "frame": 175,
+      "time_seconds": 7.0
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -0.0001201359782597189,
+        0.11891289445282979,
+        222.0181783231043
+      ],
+      "right_coefficients": [
+        5.377660948009456e-05,
+        -0.16219368885894375,
+        820.3704144311315
+      ],
+      "center_radius_m": 6050.494688461991,
+      "straight": false,
+      "vehicle_offset_m": -0.25005506416911655,
+      "frame": 176,
+      "time_seconds": 7.04
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -9.00641624807485e-05,
+        0.1047200757749129,
+        223.5065777471367
+      ],
+      "right_coefficients": [
+        5.5715723247517246e-05,
+        -0.16738270596012092,
+        822.4499852054437
+      ],
+      "center_radius_m": 11688.96253494023,
+      "straight": false,
+      "vehicle_offset_m": -0.25939576230445976,
+      "frame": 177,
+      "time_seconds": 7.08
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -5.5069105946826816e-05,
+        0.08745408488417009,
+        225.0346143123544
+      ],
+      "right_coefficients": [
+        5.4287445022077115e-05,
+        -0.17137252805872583,
+        825.1078635832223
+      ],
+      "center_radius_m": 513636.58873480116,
+      "straight": false,
+      "vehicle_offset_m": -0.26896747997701015,
+      "frame": 178,
+      "time_seconds": 7.12
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -4.2472787641928495e-05,
+        0.08556905986237873,
+        223.67676273887605
+      ],
+      "right_coefficients": [
+        5.3353455058812974e-05,
+        -0.17871724810219336,
+        829.9067643278993
+      ],
+      "center_radius_m": 36899.21108318344,
+      "straight": false,
+      "vehicle_offset_m": -0.2761219754209173,
+      "frame": 179,
+      "time_seconds": 7.16
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -3.5861034271326134e-05,
+        0.08474747078320845,
+        222.9956963202565
+      ],
+      "right_coefficients": [
+        5.170438028709584e-05,
+        -0.18424696482925063,
+        833.7511434627872
+      ],
+      "center_radius_m": 25341.144362458217,
+      "straight": false,
+      "vehicle_offset_m": -0.2806812752884587,
+      "frame": 180,
+      "time_seconds": 7.2
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -2.7724744979925975e-05,
+        0.08295972665898511,
+        222.38109484133406
+      ],
+      "right_coefficients": [
+        4.858012132053413e-05,
+        -0.18769537633937797,
+        836.892105375571
+      ],
+      "center_radius_m": 19251.07619848497,
+      "straight": false,
+      "vehicle_offset_m": -0.285157436553433,
+      "frame": 181,
+      "time_seconds": 7.24
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -5.783168257251082e-06,
+        0.0709943751345039,
+        223.11377299992424
+      ],
+      "right_coefficients": [
+        3.836195475243888e-05,
+        -0.18672653719486404,
+        839.5203452177457
+      ],
+      "center_radius_m": 12323.591783062462,
+      "straight": false,
+      "vehicle_offset_m": -0.2883971344440275,
+      "frame": 182,
+      "time_seconds": 7.28
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        1.3875945014054174e-05,
+        0.060557864969855865,
+        223.7078930561612
+      ],
+      "right_coefficients": [
+        2.8032667704346906e-05,
+        -0.18387433234538764,
+        841.0845501461938
+      ],
+      "center_radius_m": 9580.048189670828,
+      "straight": false,
+      "vehicle_offset_m": -0.29140997177125016,
+      "frame": 183,
+      "time_seconds": 7.32
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        3.5558656160469465e-05,
+        0.049680598681200394,
+        224.08351841498455
+      ],
+      "right_coefficients": [
+        1.7528833887028228e-05,
+        -0.1803906689083697,
+        842.4269340295176
+      ],
+      "center_radius_m": 7562.694821799032,
+      "straight": false,
+      "vehicle_offset_m": -0.2951931385333689,
+      "frame": 184,
+      "time_seconds": 7.36
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        4.1856442218433015e-05,
+        0.04722254133285315,
+        223.3409395259566
+      ],
+      "right_coefficients": [
+        7.575804792262715e-06,
+        -0.17593094446436974,
+        843.0294677847509
+      ],
+      "center_radius_m": 8121.931445448006,
+      "straight": false,
+      "vehicle_offset_m": -0.29471830610722605,
+      "frame": 185,
+      "time_seconds": 7.4
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        2.2872820691577706e-05,
+        0.05669196646598209,
+        222.12205554139987
+      ],
+      "right_coefficients": [
+        -3.3617219933144017e-06,
+        -0.1680678126882383,
+        841.9449665341795
+      ],
+      "center_radius_m": 20577.645853279708,
+      "straight": false,
+      "vehicle_offset_m": -0.2883374111513572,
+      "frame": 186,
+      "time_seconds": 7.44
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -6.45861142690923e-07,
+        0.07094635712581757,
+        219.01702203383806
+      ],
+      "right_coefficients": [
+        -1.0622684587762591e-05,
+        -0.16457069900083182,
+        842.8492148335656
+      ],
+      "center_radius_m": 35630.261857330035,
+      "straight": false,
+      "vehicle_offset_m": -0.2822613188227616,
+      "frame": 187,
+      "time_seconds": 7.48
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -2.258458199673253e-05,
+        0.08844495117611244,
+        214.0522466277231
+      ],
+      "right_coefficients": [
+        -1.78057409699816e-05,
+        -0.16479537765159644,
+        846.6599156992589
+      ],
+      "center_radius_m": 9940.758718509152,
+      "straight": false,
+      "vehicle_offset_m": -0.28108873139547996,
+      "frame": 188,
+      "time_seconds": 7.52
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -4.648573088396159e-05,
+        0.1111065856598919,
+        206.4646404104768
+      ],
+      "right_coefficients": [
+        -2.287126352108993e-05,
+        -0.17254634894553697,
+        854.8725868569755
+      ],
+      "center_radius_m": 5789.214912012019,
+      "straight": false,
+      "vehicle_offset_m": -0.2820397203145291,
+      "frame": 189,
+      "time_seconds": 7.56
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -6.753193685851545e-05,
+        0.1291589202431423,
+        202.05833468439337
+      ],
+      "right_coefficients": [
+        -2.8469442754252804e-05,
+        -0.17279624009617056,
+        858.7608555085258
+      ],
+      "center_radius_m": 4182.559681988463,
+      "straight": false,
+      "vehicle_offset_m": -0.2871970592641118,
+      "frame": 190,
+      "time_seconds": 7.6
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -5.351113629148809e-05,
+        0.12048845025308492,
+        203.70532506678475
+      ],
+      "right_coefficients": [
+        -3.4437067795242086e-05,
+        -0.1663590063799953,
+        858.213239592851
+      ],
+      "center_radius_m": 4565.484124258187,
+      "straight": false,
+      "vehicle_offset_m": -0.2958211717476871,
+      "frame": 191,
+      "time_seconds": 7.64
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -4.0933765620523315e-05,
+        0.10491018255813439,
+        210.06152484006876
+      ],
+      "right_coefficients": [
+        -4.090500469771595e-05,
+        -0.15077918910036486,
+        851.4038634646002
+      ],
+      "center_radius_m": 4906.2429711270215,
+      "straight": false,
+      "vehicle_offset_m": -0.30092392191704737,
+      "frame": 192,
+      "time_seconds": 7.68
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -1.3301867737323592e-05,
+        0.0801444102634413,
+        217.05789120179065
+      ],
+      "right_coefficients": [
+        -4.669537095806232e-05,
+        -0.13440345236673892,
+        843.3948938293203
+      ],
+      "center_radius_m": 6692.137901879848,
+      "straight": false,
+      "vehicle_offset_m": -0.30405133309559784,
+      "frame": 193,
+      "time_seconds": 7.72
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        5.232344855559192e-06,
+        0.06216507252992675,
+        222.2828807338915
+      ],
+      "right_coefficients": [
+        -4.657927525196035e-05,
+        -0.12425206823981269,
+        837.1722490013104
+      ],
+      "center_radius_m": 9710.55835642131,
+      "straight": false,
+      "vehicle_offset_m": -0.30482830966664703,
+      "frame": 194,
+      "time_seconds": 7.76
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        4.952439181921124e-06,
+        0.05669482806369875,
+        225.83071317206995
+      ],
+      "right_coefficients": [
+        -4.66738224706118e-05,
+        -0.11192054402385941,
+        829.37155025887
+      ],
+      "center_radius_m": 9623.312635600078,
+      "straight": false,
+      "vehicle_offset_m": -0.30226870079578216,
+      "frame": 195,
+      "time_seconds": 7.8
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -3.963110892834233e-06,
+        0.05956886285518473,
+        226.06764608556864
+      ],
+      "right_coefficients": [
+        -4.2544562446724216e-05,
+        -0.10819250037881295,
+        825.6746226185214
+      ],
+      "center_radius_m": 8632.921315476973,
+      "straight": false,
+      "vehicle_offset_m": -0.29728395499882715,
+      "frame": 196,
+      "time_seconds": 7.84
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        1.0265731470073198e-05,
+        0.058762462751759774,
+        224.01227033217364
+      ],
+      "right_coefficients": [
+        -3.680876834286821e-05,
+        -0.1086397511823177,
+        824.1062589238556
+      ],
+      "center_radius_m": 15125.876166000093,
+      "straight": false,
+      "vehicle_offset_m": -0.30307389117926453,
+      "frame": 197,
+      "time_seconds": 7.88
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -7.494727995748311e-06,
+        0.07423498075424352,
+        220.4709659388701
+      ],
+      "right_coefficients": [
+        -3.4289050209816424e-05,
+        -0.10860575390523589,
+        823.429650272988
+      ],
+      "center_radius_m": 9608.683747456178,
+      "straight": false,
+      "vehicle_offset_m": -0.3019640581568196,
+      "frame": 198,
+      "time_seconds": 7.92
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -4.017475645484248e-05,
+        0.09659734418409982,
+        217.51177695302226
+      ],
+      "right_coefficients": [
+        -3.3394270797212046e-05,
+        -0.10563081844899692,
+        821.1579001239433
+      ],
+      "center_radius_m": 5457.343383119888,
+      "straight": false,
+      "vehicle_offset_m": -0.2988450338794122,
+      "frame": 199,
+      "time_seconds": 7.96
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -9.62250556150423e-05,
+        0.13126203090158794,
+        212.32314444018925
+      ],
+      "right_coefficients": [
+        -3.177597809867643e-05,
+        -0.10700584574695805,
+        821.6043008256977
+      ],
+      "center_radius_m": 3136.7425529434113,
+      "straight": false,
+      "vehicle_offset_m": -0.2887645735740424,
+      "frame": 200,
+      "time_seconds": 8.0
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -0.0001277168797016022,
+        0.1558542945220438,
+        207.12705458327065
+      ],
+      "right_coefficients": [
+        -3.2819788432151935e-05,
+        -0.10920391179750553,
+        823.4253045935617
+      ],
+      "center_radius_m": 2501.0803117564797,
+      "straight": false,
+      "vehicle_offset_m": -0.28584431810897115,
+      "frame": 201,
+      "time_seconds": 8.04
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -0.00010117065783290928,
+        0.14539245527975342,
+        206.63619107363976
+      ],
+      "right_coefficients": [
+        -3.692128406583808e-05,
+        -0.10840550136909886,
+        824.2973988435801
+      ],
+      "center_radius_m": 2907.51997682345,
+      "straight": false,
+      "vehicle_offset_m": -0.29237741050191274,
+      "frame": 202,
+      "time_seconds": 8.08
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -6.000322419862717e-05,
+        0.12502104252077093,
+        207.24006595725876
+      ],
+      "right_coefficients": [
+        -3.822602570732305e-05,
+        -0.11159603392677031,
+        827.1417935808814
+      ],
+      "center_radius_m": 4087.3121070071716,
+      "straight": false,
+      "vehicle_offset_m": -0.3013643988981882,
+      "frame": 203,
+      "time_seconds": 8.12
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -2.7918062820060124e-05,
+        0.10954403088694052,
+        207.03919325632717
+      ],
+      "right_coefficients": [
+        -4.1376221099793915e-05,
+        -0.11426984082886908,
+        830.5132233385671
+      ],
+      "center_radius_m": 5793.942776546566,
+      "straight": false,
+      "vehicle_offset_m": -0.30828398194385975,
+      "frame": 204,
+      "time_seconds": 8.16
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -1.3281556671486295e-05,
+        0.10325846362884332,
+        206.42955232785042
+      ],
+      "right_coefficients": [
+        -4.352127743200533e-05,
+        -0.11643295060665668,
+        833.2315492242371
+      ],
+      "center_radius_m": 7068.043149217329,
+      "straight": false,
+      "vehicle_offset_m": -0.31285159732417056,
+      "frame": 205,
+      "time_seconds": 8.2
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        1.6499844191142323e-06,
+        0.09727534097291463,
+        205.30265600795042
+      ],
+      "right_coefficients": [
+        -4.668158510366559e-05,
+        -0.11871542101602583,
+        836.4798664223397
+      ],
+      "center_radius_m": 8915.58434455929,
+      "straight": false,
+      "vehicle_offset_m": -0.3170418057333578,
+      "frame": 206,
+      "time_seconds": 8.24
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        1.5479941568450773e-05,
+        0.09206150397713815,
+        204.19696786993023
+      ],
+      "right_coefficients": [
+        -4.853488836915631e-05,
+        -0.12096425671174971,
+        839.2442484596868
+      ],
+      "center_radius_m": 12145.864755431141,
+      "straight": false,
+      "vehicle_offset_m": -0.3213467028052126,
+      "frame": 207,
+      "time_seconds": 8.28
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        5.992322590968651e-05,
+        0.06945913554408498,
+        206.00569471245478
+      ],
+      "right_coefficients": [
+        -4.820056794208222e-05,
+        -0.12087902477616033,
+        840.2298270299798
+      ],
+      "center_radius_m": 34247.62669445252,
+      "straight": false,
+      "vehicle_offset_m": -0.33549236747220085,
+      "frame": 208,
+      "time_seconds": 8.32
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        7.498286231194462e-05,
+        0.058542358069255604,
+        207.7939881537622
+      ],
+      "right_coefficients": [
+        -4.592692707817379e-05,
+        -0.11971749851882943,
+        839.7674048272665
+      ],
+      "center_radius_m": 13817.19215511563,
+      "straight": false,
+      "vehicle_offset_m": -0.3397497667891182,
+      "frame": 209,
+      "time_seconds": 8.36
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        5.4692730436426836e-05,
+        0.06384473237054349,
+        208.95668536944856
+      ],
+      "right_coefficients": [
+        -4.457929376854578e-05,
+        -0.11618664128591362,
+        838.0312816893988
+      ],
+      "center_radius_m": 39697.07270185887,
+      "straight": false,
+      "vehicle_offset_m": -0.33467429371394214,
+      "frame": 210,
+      "time_seconds": 8.4
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -7.83784347341166e-06,
+        0.09004511786013822,
+        208.7240752077707
+      ],
+      "right_coefficients": [
+        -4.051896228499434e-05,
+        -0.1124057336390033,
+        834.8687100092453
+      ],
+      "center_radius_m": 8302.55247793934,
+      "straight": false,
+      "vehicle_offset_m": -0.3183846554215799,
+      "frame": 211,
+      "time_seconds": 8.44
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -5.888061660654129e-05,
+        0.1140771023818479,
+        208.1393645258267
+      ],
+      "right_coefficients": [
+        -3.5658344639857346e-05,
+        -0.10867810373843999,
+        831.2692419083035
+      ],
+      "center_radius_m": 4246.8820336108265,
+      "straight": false,
+      "vehicle_offset_m": -0.30820432107946444,
+      "frame": 212,
+      "time_seconds": 8.48
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -6.024719788244301e-05,
+        0.11359134997402105,
+        209.67962527289987
+      ],
+      "right_coefficients": [
+        -2.817378795036483e-05,
+        -0.10513340554325581,
+        826.7767392419286
+      ],
+      "center_radius_m": 4540.6719848029325,
+      "straight": false,
+      "vehicle_offset_m": -0.31003283173879487,
+      "frame": 213,
+      "time_seconds": 8.52
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        -1.9895350425436246e-05,
+        0.08598812008395622,
+        214.87436864692378
+      ],
+      "right_coefficients": [
+        -1.7707651720610345e-05,
+        -0.10556102703695755,
+        823.6647685666425
+      ],
+      "center_radius_m": 10676.788917832655,
+      "straight": false,
+      "vehicle_offset_m": -0.316737722660309,
+      "frame": 214,
+      "time_seconds": 8.56
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        1.437839612104386e-05,
+        0.05929099299541746,
+        220.81521243557975
+      ],
+      "right_coefficients": [
+        -1.1306366932815277e-05,
+        -0.10123413160725889,
+        818.8261488553545
+      ],
+      "center_radius_m": 130686.64242208538,
+      "straight": false,
+      "vehicle_offset_m": -0.32006201251288174,
+      "frame": 215,
+      "time_seconds": 8.6
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        5.406444510263516e-05,
+        0.0292331720018075,
+        226.54229713855
+      ],
+      "right_coefficients": [
+        -2.067007356801404e-06,
+        -0.1024514858879463,
+        816.177553592331
+      ],
+      "center_radius_m": 7720.9518692875145,
+      "straight": false,
+      "vehicle_offset_m": -0.3217404335458936,
+      "frame": 216,
+      "time_seconds": 8.64
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        7.912558563011173e-05,
+        0.009983586016169214,
+        230.2362752153727
+      ],
+      "right_coefficients": [
+        5.606115399960372e-06,
+        -0.10459075554752577,
+        814.364807540774
+      ],
+      "center_radius_m": 4738.1191168452915,
+      "straight": false,
+      "vehicle_offset_m": -0.32121043357044615,
+      "frame": 217,
+      "time_seconds": 8.68
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        0.00010044290517901713,
+        -0.004609724437801256,
+        231.9692549261524
+      ],
+      "right_coefficients": [
+        1.0599566047862426e-05,
+        -0.10795482934583875,
+        814.0364804838176
+      ],
+      "center_radius_m": 3615.454561027168,
+      "straight": false,
+      "vehicle_offset_m": -0.31877766933447194,
+      "frame": 218,
+      "time_seconds": 8.72
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        0.00010000826110881527,
+        -0.005172643269841336,
+        231.89900062719465
+      ],
+      "right_coefficients": [
+        1.3521297706404311e-05,
+        -0.11247452225745802,
+        814.9037453521065
+      ],
+      "center_radius_m": 3536.2502128950414,
+      "straight": false,
+      "vehicle_offset_m": -0.31407081411776483,
+      "frame": 219,
+      "time_seconds": 8.76
+    },
+    {
+      "status": "detected",
+      "held_frames": 0,
+      "issues": [],
+      "left_coefficients": [
+        7.627957703846593e-05,
+        0.004895144178130355,
+        230.86900115872254
+      ],
+      "right_coefficients": [
+        1.5765212126581626e-05,
+        -0.11722853625970142,
+        816.210597289881
+      ],
+      "center_radius_m": 4361.673946894197,
+      "straight": false,
+      "vehicle_offset_m": -0.30210735060801047,
+      "frame": 220,
+      "time_seconds": 8.8
+    }
+  ]
+}

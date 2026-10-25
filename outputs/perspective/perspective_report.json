@@ -1,0 +1,240 @@
+{
+  "threshold_method": "or",
+  "threshold_settings": {
+    "blur_kernel": 3,
+    "white_lightness_min": 200,
+    "white_saturation_max": 100,
+    "yellow_hue_min": 15,
+    "yellow_hue_max": 40,
+    "yellow_saturation_min": 80,
+    "yellow_value_min": 80,
+    "sobel_kernel": 3,
+    "gradient_min": 30,
+    "gradient_max": 255
+  },
+  "perspective_settings": {
+    "reference_size": [
+      1280,
+      720
+    ],
+    "source_points": [
+      [
+        580,
+        460
+      ],
+      [
+        705,
+        460
+      ],
+      [
+        1020,
+        660
+      ],
+      [
+        295,
+        660
+      ]
+    ],
+    "destination_margin": 0.25
+  },
+  "point_order": [
+    "top_left",
+    "top_right",
+    "bottom_right",
+    "bottom_left"
+  ],
+  "interpolation": "INTER_NEAREST",
+  "roi_definition": "Inverse projection of full output bounds, clipped to the source image.",
+  "calibration_file": "/home/micicd/multimedija/multimedijalni_sistemi/outputs/calibration/camera_calibration.npz",
+  "opencv_version": "4.14.0",
+  "numpy_version": "2.2.6",
+  "images": [
+    {
+      "image": "challange00101.jpg",
+      "image_size": [
+        960,
+        540
+      ],
+      "transform": "transforms/960x540.npz",
+      "binary_mask": "binary/challange00101.png",
+      "comparison": "comparisons/challange00101_comparison.png",
+      "active_pixels": 34307
+    },
+    {
+      "image": "challange00111.jpg",
+      "image_size": [
+        960,
+        540
+      ],
+      "transform": "transforms/960x540.npz",
+      "binary_mask": "binary/challange00111.png",
+      "comparison": "comparisons/challange00111_comparison.png",
+      "active_pixels": 33715
+    },
+    {
+      "image": "challange00136.jpg",
+      "image_size": [
+        960,
+        540
+      ],
+      "transform": "transforms/960x540.npz",
+      "binary_mask": "binary/challange00136.png",
+      "comparison": "comparisons/challange00136_comparison.png",
+      "active_pixels": 19557
+    },
+    {
+      "image": "solidWhiteCurve.jpg",
+      "image_size": [
+        960,
+        540
+      ],
+      "transform": "transforms/960x540.npz",
+      "binary_mask": "binary/solidWhiteCurve.png",
+      "comparison": "comparisons/solidWhiteCurve_comparison.png",
+      "active_pixels": 32552
+    },
+    {
+      "image": "solidWhiteRight.jpg",
+      "image_size": [
+        960,
+        540
+      ],
+      "transform": "transforms/960x540.npz",
+      "binary_mask": "binary/solidWhiteRight.png",
+      "comparison": "comparisons/solidWhiteRight_comparison.png",
+      "active_pixels": 33912
+    },
+    {
+      "image": "solidYellowCurve.jpg",
+      "image_size": [
+        960,
+        540
+      ],
+      "transform": "transforms/960x540.npz",
+      "binary_mask": "binary/solidYellowCurve.png",
+      "comparison": "comparisons/solidYellowCurve_comparison.png",
+      "active_pixels": 29587
+    },
+    {
+      "image": "solidYellowCurve2.jpg",
+      "image_size": [
+        960,
+        540
+      ],
+      "transform": "transforms/960x540.npz",
+      "binary_mask": "binary/solidYellowCurve2.png",
+      "comparison": "comparisons/solidYellowCurve2_comparison.png",
+      "active_pixels": 33188
+    },
+    {
+      "image": "solidYellowLeft.jpg",
+      "image_size": [
+        960,
+        540
+      ],
+      "transform": "transforms/960x540.npz",
+      "binary_mask": "binary/solidYellowLeft.png",
+      "comparison": "comparisons/solidYellowLeft_comparison.png",
+      "active_pixels": 32768
+    },
+    {
+      "image": "straight_lines1.jpg",
+      "image_size": [
+        1280,
+        720
+      ],
+      "transform": "transforms/1280x720.npz",
+      "binary_mask": "binary/straight_lines1.png",
+      "comparison": "comparisons/straight_lines1_comparison.png",
+      "active_pixels": 52726
+    },
+    {
+      "image": "straight_lines2.jpg",
+      "image_size": [
+        1280,
+        720
+      ],
+      "transform": "transforms/1280x720.npz",
+      "binary_mask": "binary/straight_lines2.png",
+      "comparison": "comparisons/straight_lines2_comparison.png",
+      "active_pixels": 38586
+    },
+    {
+      "image": "test1.jpg",
+      "image_size": [
+        1280,
+        720
+      ],
+      "transform": "transforms/1280x720.npz",
+      "binary_mask": "binary/test1.png",
+      "comparison": "comparisons/test1_comparison.png",
+      "active_pixels": 45518
+    },
+    {
+      "image": "test2.jpg",
+      "image_size": [
+        1280,
+        720
+      ],
+      "transform": "transforms/1280x720.npz",
+      "binary_mask": "binary/test2.png",
+      "comparison": "comparisons/test2_comparison.png",
+      "active_pixels": 50678
+    },
+    {
+      "image": "test3.jpg",
+      "image_size": [
+        1280,
+        720
+      ],
+      "transform": "transforms/1280x720.npz",
+      "binary_mask": "binary/test3.png",
+      "comparison": "comparisons/test3_comparison.png",
+      "active_pixels": 52347
+    },
+    {
+      "image": "test4.jpg",
+      "image_size": [
+        1280,
+        720
+      ],
+      "transform": "transforms/1280x720.npz",
+      "binary_mask": "binary/test4.png",
+      "comparison": "comparisons/test4_comparison.png",
+      "active_pixels": 59827
+    },
+    {
+      "image": "test5.jpg",
+      "image_size": [
+        1280,
+        720
+      ],
+      "transform": "transforms/1280x720.npz",
+      "binary_mask": "binary/test5.png",
+      "comparison": "comparisons/test5_comparison.png",
+      "active_pixels": 30326
+    },
+    {
+      "image": "test6.jpg",
+      "image_size": [
+        1280,
+        720
+      ],
+      "transform": "transforms/1280x720.npz",
+      "binary_mask": "binary/test6.png",
+      "comparison": "comparisons/test6_comparison.png",
+      "active_pixels": 55713
+    },
+    {
+      "image": "whiteCarLaneSwitch.jpg",
+      "image_size": [
+        960,
+        540
+      ],
+      "transform": "transforms/960x540.npz",
+      "binary_mask": "binary/whiteCarLaneSwitch.png",
+      "comparison": "comparisons/whiteCarLaneSwitch_comparison.png",
+      "active_pixels": 39336
+    }
+  ]
+}

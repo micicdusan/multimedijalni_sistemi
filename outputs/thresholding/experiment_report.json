@@ -1,0 +1,536 @@
+{
+  "settings": {
+    "blur_kernel": 3,
+    "white_lightness_min": 200,
+    "white_saturation_max": 100,
+    "yellow_hue_min": 15,
+    "yellow_hue_max": 40,
+    "yellow_saturation_min": 80,
+    "yellow_value_min": 80,
+    "sobel_kernel": 3,
+    "gradient_min": 30,
+    "gradient_max": 255
+  },
+  "calibration_file": "/home/micicd/multimedija/multimedijalni_sistemi/outputs/calibration/camera_calibration.npz",
+  "calibration_size": [
+    1280,
+    720
+  ],
+  "roi_applied": false,
+  "selected_method": null,
+  "opencv_version": "4.14.0",
+  "numpy_version": "2.2.6",
+  "timing_scope": "Single-pass thresholding including shared blur; excludes undistortion and file I/O.",
+  "images": [
+    {
+      "image": "challange00101.jpg",
+      "group": "evaluation",
+      "image_size": [
+        960,
+        540
+      ],
+      "methods": {
+        "color": {
+          "active_pixels": 23324,
+          "active_fraction": 0.04499228395061729,
+          "thresholding_ms": 3.5666680050780997
+        },
+        "gradient": {
+          "active_pixels": 26967,
+          "active_fraction": 0.05201967592592593,
+          "thresholding_ms": 9.367052000015974
+        },
+        "or": {
+          "active_pixels": 48264,
+          "active_fraction": 0.09310185185185185,
+          "thresholding_ms": 12.574911001138389
+        },
+        "and": {
+          "active_pixels": 2027,
+          "active_fraction": 0.003910108024691358,
+          "thresholding_ms": 12.545684003271163
+        }
+      }
+    },
+    {
+      "image": "challange00111.jpg",
+      "group": "evaluation",
+      "image_size": [
+        960,
+        540
+      ],
+      "methods": {
+        "color": {
+          "active_pixels": 16221,
+          "active_fraction": 0.03129050925925926,
+          "thresholding_ms": 3.00793100905139
+        },
+        "gradient": {
+          "active_pixels": 30291,
+          "active_fraction": 0.05843171296296296,
+          "thresholding_ms": 8.560626003600191
+        },
+        "or": {
+          "active_pixels": 45466,
+          "active_fraction": 0.08770447530864198,
+          "thresholding_ms": 11.490048011182807
+        },
+        "and": {
+          "active_pixels": 1046,
+          "active_fraction": 0.002017746913580247,
+          "thresholding_ms": 11.455097010184545
+        }
+      }
+    },
+    {
+      "image": "challange00136.jpg",
+      "group": "evaluation",
+      "image_size": [
+        960,
+        540
+      ],
+      "methods": {
+        "color": {
+          "active_pixels": 9461,
+          "active_fraction": 0.018250385802469137,
+          "thresholding_ms": 2.3931540054036304
+        },
+        "gradient": {
+          "active_pixels": 47895,
+          "active_fraction": 0.0923900462962963,
+          "thresholding_ms": 2.5697129967738874
+        },
+        "or": {
+          "active_pixels": 56416,
+          "active_fraction": 0.10882716049382717,
+          "thresholding_ms": 4.834493993257638
+        },
+        "and": {
+          "active_pixels": 940,
+          "active_fraction": 0.0018132716049382715,
+          "thresholding_ms": 4.823174000193831
+        }
+      }
+    },
+    {
+      "image": "solidWhiteCurve.jpg",
+      "group": "evaluation",
+      "image_size": [
+        960,
+        540
+      ],
+      "methods": {
+        "color": {
+          "active_pixels": 9901,
+          "active_fraction": 0.0190991512345679,
+          "thresholding_ms": 2.2245440050028265
+        },
+        "gradient": {
+          "active_pixels": 14811,
+          "active_fraction": 0.02857060185185185,
+          "thresholding_ms": 3.6143979959888384
+        },
+        "or": {
+          "active_pixels": 22825,
+          "active_fraction": 0.044029706790123455,
+          "thresholding_ms": 5.684074996679556
+        },
+        "and": {
+          "active_pixels": 1887,
+          "active_fraction": 0.003640046296296296,
+          "thresholding_ms": 5.667142002494074
+        }
+      }
+    },
+    {
+      "image": "solidWhiteRight.jpg",
+      "group": "evaluation",
+      "image_size": [
+        960,
+        540
+      ],
+      "methods": {
+        "color": {
+          "active_pixels": 18854,
+          "active_fraction": 0.036369598765432096,
+          "thresholding_ms": 2.2414060003939085
+        },
+        "gradient": {
+          "active_pixels": 15511,
+          "active_fraction": 0.02992091049382716,
+          "thresholding_ms": 2.873081000871025
+        },
+        "or": {
+          "active_pixels": 32821,
+          "active_fraction": 0.06331211419753087,
+          "thresholding_ms": 5.0293720050831325
+        },
+        "and": {
+          "active_pixels": 1544,
+          "active_fraction": 0.002978395061728395,
+          "thresholding_ms": 5.004683000151999
+        }
+      }
+    },
+    {
+      "image": "solidYellowCurve.jpg",
+      "group": "evaluation",
+      "image_size": [
+        960,
+        540
+      ],
+      "methods": {
+        "color": {
+          "active_pixels": 5801,
+          "active_fraction": 0.01119020061728395,
+          "thresholding_ms": 2.200406997872051
+        },
+        "gradient": {
+          "active_pixels": 14942,
+          "active_fraction": 0.0288233024691358,
+          "thresholding_ms": 2.8366780024953187
+        },
+        "or": {
+          "active_pixels": 18412,
+          "active_fraction": 0.03551697530864197,
+          "thresholding_ms": 4.9107930026366375
+        },
+        "and": {
+          "active_pixels": 2331,
+          "active_fraction": 0.004496527777777778,
+          "thresholding_ms": 4.892456003290135
+        }
+      }
+    },
+    {
+      "image": "solidYellowCurve2.jpg",
+      "group": "evaluation",
+      "image_size": [
+        960,
+        540
+      ],
+      "methods": {
+        "color": {
+          "active_pixels": 12023,
+          "active_fraction": 0.023192515432098767,
+          "thresholding_ms": 2.2329819985316135
+        },
+        "gradient": {
+          "active_pixels": 20316,
+          "active_fraction": 0.039189814814814816,
+          "thresholding_ms": 2.9036499981884845
+        },
+        "or": {
+          "active_pixels": 28642,
+          "active_fraction": 0.05525077160493827,
+          "thresholding_ms": 4.999088996555656
+        },
+        "and": {
+          "active_pixels": 3697,
+          "active_fraction": 0.0071315586419753085,
+          "thresholding_ms": 4.981161997420713
+        }
+      }
+    },
+    {
+      "image": "solidYellowLeft.jpg",
+      "group": "parameter check",
+      "image_size": [
+        960,
+        540
+      ],
+      "methods": {
+        "color": {
+          "active_pixels": 6273,
+          "active_fraction": 0.012100694444444445,
+          "thresholding_ms": 2.2015739959897473
+        },
+        "gradient": {
+          "active_pixels": 21172,
+          "active_fraction": 0.04084104938271605,
+          "thresholding_ms": 2.856877996237017
+        },
+        "or": {
+          "active_pixels": 24128,
+          "active_fraction": 0.04654320987654321,
+          "thresholding_ms": 4.902547996607609
+        },
+        "and": {
+          "active_pixels": 3317,
+          "active_fraction": 0.006398533950617284,
+          "thresholding_ms": 4.897702994639985
+        }
+      }
+    },
+    {
+      "image": "straight_lines1.jpg",
+      "group": "parameter check",
+      "image_size": [
+        1280,
+        720
+      ],
+      "methods": {
+        "color": {
+          "active_pixels": 122593,
+          "active_fraction": 0.13302191840277777,
+          "thresholding_ms": 2.910486997279804
+        },
+        "gradient": {
+          "active_pixels": 24313,
+          "active_fraction": 0.026381293402777777,
+          "thresholding_ms": 7.9042979996302165
+        },
+        "or": {
+          "active_pixels": 135562,
+          "active_fraction": 0.14709418402777777,
+          "thresholding_ms": 10.527436999836937
+        },
+        "and": {
+          "active_pixels": 11344,
+          "active_fraction": 0.012309027777777778,
+          "thresholding_ms": 10.501831995497923
+        }
+      }
+    },
+    {
+      "image": "straight_lines2.jpg",
+      "group": "evaluation",
+      "image_size": [
+        1280,
+        720
+      ],
+      "methods": {
+        "color": {
+          "active_pixels": 85373,
+          "active_fraction": 0.09263563368055555,
+          "thresholding_ms": 3.682023991132155
+        },
+        "gradient": {
+          "active_pixels": 27556,
+          "active_fraction": 0.029900173611111112,
+          "thresholding_ms": 7.678256995859556
+        },
+        "or": {
+          "active_pixels": 109061,
+          "active_fraction": 0.11833875868055556,
+          "thresholding_ms": 11.0601099950145
+        },
+        "and": {
+          "active_pixels": 3868,
+          "active_fraction": 0.0041970486111111115,
+          "thresholding_ms": 11.022710990800988
+        }
+      }
+    },
+    {
+      "image": "test1.jpg",
+      "group": "evaluation",
+      "image_size": [
+        1280,
+        720
+      ],
+      "methods": {
+        "color": {
+          "active_pixels": 40423,
+          "active_fraction": 0.043861762152777775,
+          "thresholding_ms": 2.3624940076842904
+        },
+        "gradient": {
+          "active_pixels": 38338,
+          "active_fraction": 0.04159939236111111,
+          "thresholding_ms": 4.646495006454643
+        },
+        "or": {
+          "active_pixels": 76831,
+          "active_fraction": 0.08336697048611111,
+          "thresholding_ms": 6.789199011109304
+        },
+        "and": {
+          "active_pixels": 1930,
+          "active_fraction": 0.0020941840277777777,
+          "thresholding_ms": 6.792039013816975
+        }
+      }
+    },
+    {
+      "image": "test2.jpg",
+      "group": "parameter check",
+      "image_size": [
+        1280,
+        720
+      ],
+      "methods": {
+        "color": {
+          "active_pixels": 109732,
+          "active_fraction": 0.11906684027777778,
+          "thresholding_ms": 2.606553003715817
+        },
+        "gradient": {
+          "active_pixels": 33314,
+          "active_fraction": 0.036148003472222225,
+          "thresholding_ms": 4.659206999349408
+        },
+        "or": {
+          "active_pixels": 127014,
+          "active_fraction": 0.13781901041666667,
+          "thresholding_ms": 7.018415002676193
+        },
+        "and": {
+          "active_pixels": 16032,
+          "active_fraction": 0.017395833333333333,
+          "thresholding_ms": 6.993864000833128
+        }
+      }
+    },
+    {
+      "image": "test3.jpg",
+      "group": "evaluation",
+      "image_size": [
+        1280,
+        720
+      ],
+      "methods": {
+        "color": {
+          "active_pixels": 54798,
+          "active_fraction": 0.05945963541666666,
+          "thresholding_ms": 3.013500005181413
+        },
+        "gradient": {
+          "active_pixels": 16832,
+          "active_fraction": 0.01826388888888889,
+          "thresholding_ms": 5.021803008276038
+        },
+        "or": {
+          "active_pixels": 66393,
+          "active_fraction": 0.072041015625,
+          "thresholding_ms": 7.766398004605435
+        },
+        "and": {
+          "active_pixels": 5237,
+          "active_fraction": 0.005682508680555556,
+          "thresholding_ms": 7.739585009403527
+        }
+      }
+    },
+    {
+      "image": "test4.jpg",
+      "group": "evaluation",
+      "image_size": [
+        1280,
+        720
+      ],
+      "methods": {
+        "color": {
+          "active_pixels": 72065,
+          "active_fraction": 0.07819552951388889,
+          "thresholding_ms": 3.026666003279388
+        },
+        "gradient": {
+          "active_pixels": 40493,
+          "active_fraction": 0.04393771701388889,
+          "thresholding_ms": 6.891951001307461
+        },
+        "or": {
+          "active_pixels": 107583,
+          "active_fraction": 0.11673502604166666,
+          "thresholding_ms": 9.672162006609142
+        },
+        "and": {
+          "active_pixels": 4975,
+          "active_fraction": 0.005398220486111111,
+          "thresholding_ms": 9.676918998593464
+        }
+      }
+    },
+    {
+      "image": "test5.jpg",
+      "group": "evaluation",
+      "image_size": [
+        1280,
+        720
+      ],
+      "methods": {
+        "color": {
+          "active_pixels": 23353,
+          "active_fraction": 0.02533962673611111,
+          "thresholding_ms": 3.1195010014926083
+        },
+        "gradient": {
+          "active_pixels": 73966,
+          "active_fraction": 0.08025824652777777,
+          "thresholding_ms": 5.1015530043514445
+        },
+        "or": {
+          "active_pixels": 95444,
+          "active_fraction": 0.10356336805555555,
+          "thresholding_ms": 7.965318007336464
+        },
+        "and": {
+          "active_pixels": 1875,
+          "active_fraction": 0.0020345052083333335,
+          "thresholding_ms": 7.964228003402241
+        }
+      }
+    },
+    {
+      "image": "test6.jpg",
+      "group": "evaluation",
+      "image_size": [
+        1280,
+        720
+      ],
+      "methods": {
+        "color": {
+          "active_pixels": 53604,
+          "active_fraction": 0.0581640625,
+          "thresholding_ms": 2.8581840015249327
+        },
+        "gradient": {
+          "active_pixels": 74248,
+          "active_fraction": 0.08056423611111112,
+          "thresholding_ms": 5.341201009287033
+        },
+        "or": {
+          "active_pixels": 122018,
+          "active_fraction": 0.13239800347222222,
+          "thresholding_ms": 7.8519820017390884
+        },
+        "and": {
+          "active_pixels": 5834,
+          "active_fraction": 0.006330295138888889,
+          "thresholding_ms": 7.848178007407114
+        }
+      }
+    },
+    {
+      "image": "whiteCarLaneSwitch.jpg",
+      "group": "evaluation",
+      "image_size": [
+        960,
+        540
+      ],
+      "methods": {
+        "color": {
+          "active_pixels": 7342,
+          "active_fraction": 0.014162808641975309,
+          "thresholding_ms": 2.170309002394788
+        },
+        "gradient": {
+          "active_pixels": 23407,
+          "active_fraction": 0.04515239197530864,
+          "thresholding_ms": 2.3414579991367646
+        },
+        "or": {
+          "active_pixels": 27201,
+          "active_fraction": 0.05247106481481482,
+          "thresholding_ms": 4.338917002314702
+        },
+        "and": {
+          "active_pixels": 3548,
+          "active_fraction": 0.006844135802469136,
+          "thresholding_ms": 4.329819006670732
+        }
+      }
+    }
+  ]
+}

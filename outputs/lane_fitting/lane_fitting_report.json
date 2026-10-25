@@ -1,0 +1,722 @@
+{
+  "settings": {
+    "windows": 9,
+    "margin_fraction": 0.08,
+    "minimum_window_pixel_fraction": 0.0002,
+    "minimum_pixel_fraction": 0.00015,
+    "minimum_row_fraction": 0.1,
+    "minimum_y_span_fraction": 0.35,
+    "refinement_iterations": 3,
+    "outlier_sigma": 3.0,
+    "minimum_residual_fraction": 0.01,
+    "minimum_lane_width_fraction": 0.25,
+    "maximum_lane_width_fraction": 0.8
+  },
+  "polynomial": "x = a*y**2 + b*y + c",
+  "coefficient_order": [
+    "a",
+    "b",
+    "c"
+  ],
+  "coordinate_units": "bird's-eye pixels",
+  "input_directory": "/home/micicd/multimedija/multimedijalni_sistemi/outputs/perspective/binary",
+  "images": [
+    {
+      "image": "challange00101.png",
+      "image_size": [
+        960,
+        540
+      ],
+      "plot": "fitted/challange00101.png",
+      "fit": "fits/challange00101.npz",
+      "status": "ok",
+      "issues": [],
+      "left": {
+        "coefficients": [
+          0.0003083195926497604,
+          -0.25661097339968225,
+          321.34734634979526
+        ],
+        "candidate_pixels": 13231,
+        "inlier_pixels": 13118,
+        "observed_y_range": [
+          120,
+          539
+        ],
+        "observed_rows": 420,
+        "rms_error_pixels": 10.138992394927538
+      },
+      "right": {
+        "coefficients": [
+          0.0001563186376556013,
+          -0.17197742258326423,
+          795.3488548506377
+        ],
+        "candidate_pixels": 3874,
+        "inlier_pixels": 3722,
+        "observed_y_range": [
+          98,
+          519
+        ],
+        "observed_rows": 195,
+        "rms_error_pixels": 9.825685521547635
+      }
+    },
+    {
+      "image": "challange00111.png",
+      "image_size": [
+        960,
+        540
+      ],
+      "plot": "fitted/challange00111.png",
+      "fit": "fits/challange00111.npz",
+      "status": "ok",
+      "issues": [],
+      "left": {
+        "coefficients": [
+          0.0001249772775529604,
+          -0.17443285464492406,
+          297.81163469166586
+        ],
+        "candidate_pixels": 13958,
+        "inlier_pixels": 13936,
+        "observed_y_range": [
+          66,
+          539
+        ],
+        "observed_rows": 474,
+        "rms_error_pixels": 9.410534187392576
+      },
+      "right": {
+        "coefficients": [
+          0.000485743425474063,
+          -0.36134542023762284,
+          824.6533440633759
+        ],
+        "candidate_pixels": 4575,
+        "inlier_pixels": 4575,
+        "observed_y_range": [
+          11,
+          411
+        ],
+        "observed_rows": 206,
+        "rms_error_pixels": 10.461546744009501
+      }
+    },
+    {
+      "image": "challange00136.png",
+      "image_size": [
+        960,
+        540
+      ],
+      "plot": "fitted/challange00136.png",
+      "fit": "fits/challange00136.npz",
+      "status": "ok",
+      "issues": [],
+      "left": {
+        "coefficients": [
+          0.0003150238927401731,
+          -0.33571088273316685,
+          310.48653878872534
+        ],
+        "candidate_pixels": 12987,
+        "inlier_pixels": 12967,
+        "observed_y_range": [
+          0,
+          539
+        ],
+        "observed_rows": 454,
+        "rms_error_pixels": 11.740677280926427
+      },
+      "right": {
+        "coefficients": [
+          0.00018297233181277552,
+          -0.20830746662856625,
+          790.2152072920851
+        ],
+        "candidate_pixels": 4277,
+        "inlier_pixels": 4262,
+        "observed_y_range": [
+          140,
+          495
+        ],
+        "observed_rows": 210,
+        "rms_error_pixels": 10.336171507142078
+      }
+    },
+    {
+      "image": "solidWhiteCurve.png",
+      "image_size": [
+        960,
+        540
+      ],
+      "plot": "fitted/solidWhiteCurve.png",
+      "fit": "fits/solidWhiteCurve.npz",
+      "status": "ok",
+      "issues": [],
+      "left": {
+        "coefficients": [
+          9.552617510137213e-05,
+          -0.004611785111793119,
+          235.7768594252585
+        ],
+        "candidate_pixels": 8811,
+        "inlier_pixels": 8811,
+        "observed_y_range": [
+          0,
+          519
+        ],
+        "observed_rows": 299,
+        "rms_error_pixels": 12.253845175021594
+      },
+      "right": {
+        "coefficients": [
+          1.7860056918697886e-05,
+          -0.09563884300993704,
+          805.5974364486618
+        ],
+        "candidate_pixels": 23723,
+        "inlier_pixels": 23723,
+        "observed_y_range": [
+          0,
+          539
+        ],
+        "observed_rows": 540,
+        "rms_error_pixels": 14.59238990079077
+      }
+    },
+    {
+      "image": "solidWhiteRight.png",
+      "image_size": [
+        960,
+        540
+      ],
+      "plot": "fitted/solidWhiteRight.png",
+      "fit": "fits/solidWhiteRight.npz",
+      "status": "ok",
+      "issues": [],
+      "left": {
+        "coefficients": [
+          6.271764448556274e-05,
+          0.032988622130912325,
+          200.1555503861502
+        ],
+        "candidate_pixels": 9733,
+        "inlier_pixels": 9733,
+        "observed_y_range": [
+          0,
+          475
+        ],
+        "observed_rows": 281,
+        "rms_error_pixels": 13.284369173376973
+      },
+      "right": {
+        "coefficients": [
+          -5.534217873386454e-05,
+          -0.0622779741416579,
+          775.4094942008
+        ],
+        "candidate_pixels": 24179,
+        "inlier_pixels": 24179,
+        "observed_y_range": [
+          0,
+          539
+        ],
+        "observed_rows": 540,
+        "rms_error_pixels": 14.534932138796151
+      }
+    },
+    {
+      "image": "solidYellowCurve.png",
+      "image_size": [
+        960,
+        540
+      ],
+      "plot": "fitted/solidYellowCurve.png",
+      "fit": "fits/solidYellowCurve.npz",
+      "status": "ok",
+      "issues": [],
+      "left": {
+        "coefficients": [
+          -5.854927863218676e-05,
+          0.08152737245906096,
+          216.27133180433597
+        ],
+        "candidate_pixels": 19733,
+        "inlier_pixels": 19732,
+        "observed_y_range": [
+          0,
+          539
+        ],
+        "observed_rows": 540,
+        "rms_error_pixels": 13.656007527345116
+      },
+      "right": {
+        "coefficients": [
+          -8.491816731355609e-05,
+          0.008103163108342052,
+          743.5528835345053
+        ],
+        "candidate_pixels": 9116,
+        "inlier_pixels": 9116,
+        "observed_y_range": [
+          0,
+          464
+        ],
+        "observed_rows": 276,
+        "rms_error_pixels": 13.211380989140448
+      }
+    },
+    {
+      "image": "solidYellowCurve2.png",
+      "image_size": [
+        960,
+        540
+      ],
+      "plot": "fitted/solidYellowCurve2.png",
+      "fit": "fits/solidYellowCurve2.npz",
+      "status": "ok",
+      "issues": [],
+      "left": {
+        "coefficients": [
+          8.609382451392824e-06,
+          0.04153118508495553,
+          219.5551373263876
+        ],
+        "candidate_pixels": 22617,
+        "inlier_pixels": 22584,
+        "observed_y_range": [
+          0,
+          539
+        ],
+        "observed_rows": 540,
+        "rms_error_pixels": 14.418280538553011
+      },
+      "right": {
+        "coefficients": [
+          -3.7803283806067504e-05,
+          -0.04453491972837657,
+          772.1659060320571
+        ],
+        "candidate_pixels": 10552,
+        "inlier_pixels": 10552,
+        "observed_y_range": [
+          0,
+          539
+        ],
+        "observed_rows": 308,
+        "rms_error_pixels": 14.55285813023106
+      }
+    },
+    {
+      "image": "solidYellowLeft.png",
+      "image_size": [
+        960,
+        540
+      ],
+      "plot": "fitted/solidYellowLeft.png",
+      "fit": "fits/solidYellowLeft.npz",
+      "status": "ok",
+      "issues": [],
+      "left": {
+        "coefficients": [
+          -4.187967510132954e-05,
+          0.12811314617624872,
+          175.59291443583297
+        ],
+        "candidate_pixels": 22169,
+        "inlier_pixels": 22130,
+        "observed_y_range": [
+          0,
+          539
+        ],
+        "observed_rows": 540,
+        "rms_error_pixels": 14.712234051367036
+      },
+      "right": {
+        "coefficients": [
+          9.761575641859767e-05,
+          -0.1751526814679381,
+          796.8516956290481
+        ],
+        "candidate_pixels": 10547,
+        "inlier_pixels": 10547,
+        "observed_y_range": [
+          11,
+          539
+        ],
+        "observed_rows": 298,
+        "rms_error_pixels": 13.167997912168339
+      }
+    },
+    {
+      "image": "straight_lines1.png",
+      "image_size": [
+        1280,
+        720
+      ],
+      "plot": "fitted/straight_lines1.png",
+      "fit": "fits/straight_lines1.npz",
+      "status": "ok",
+      "issues": [],
+      "left": {
+        "coefficients": [
+          -3.165316746415139e-05,
+          0.012888092823249226,
+          326.5094966831769
+        ],
+        "candidate_pixels": 39963,
+        "inlier_pixels": 39905,
+        "observed_y_range": [
+          0,
+          719
+        ],
+        "observed_rows": 720,
+        "rms_error_pixels": 18.298451113880336
+      },
+      "right": {
+        "coefficients": [
+          1.3688838304540422e-05,
+          0.00790262246944248,
+          938.89661479831
+        ],
+        "candidate_pixels": 12711,
+        "inlier_pixels": 12711,
+        "observed_y_range": [
+          0,
+          596
+        ],
+        "observed_rows": 350,
+        "rms_error_pixels": 14.441214453350412
+      }
+    },
+    {
+      "image": "straight_lines2.png",
+      "image_size": [
+        1280,
+        720
+      ],
+      "plot": "fitted/straight_lines2.png",
+      "fit": "fits/straight_lines2.npz",
+      "status": "ok",
+      "issues": [],
+      "left": {
+        "coefficients": [
+          3.2243260050246774e-05,
+          -0.023794648242913885,
+          326.21953963294993
+        ],
+        "candidate_pixels": 10043,
+        "inlier_pixels": 10037,
+        "observed_y_range": [
+          0,
+          719
+        ],
+        "observed_rows": 334,
+        "rms_error_pixels": 13.961814800440765
+      },
+      "right": {
+        "coefficients": [
+          -1.3299430312996253e-06,
+          -0.008721999657828085,
+          959.835616026992
+        ],
+        "candidate_pixels": 28473,
+        "inlier_pixels": 28473,
+        "observed_y_range": [
+          0,
+          719
+        ],
+        "observed_rows": 720,
+        "rms_error_pixels": 14.819516616164538
+      }
+    },
+    {
+      "image": "test1.png",
+      "image_size": [
+        1280,
+        720
+      ],
+      "plot": "fitted/test1.png",
+      "fit": "fits/test1.npz",
+      "status": "ok",
+      "issues": [],
+      "left": {
+        "coefficients": [
+          0.0002226900752825335,
+          -0.27659336575734883,
+          428.67798359957504
+        ],
+        "candidate_pixels": 20551,
+        "inlier_pixels": 20098,
+        "observed_y_range": [
+          11,
+          719
+        ],
+        "observed_rows": 580,
+        "rms_error_pixels": 11.119992541296448
+      },
+      "right": {
+        "coefficients": [
+          -0.00023526168484887147,
+          -0.06242571059413978,
+          1063.739457413403
+        ],
+        "candidate_pixels": 3549,
+        "inlier_pixels": 3390,
+        "observed_y_range": [
+          0,
+          714
+        ],
+        "observed_rows": 205,
+        "rms_error_pixels": 11.760699218900474
+      }
+    },
+    {
+      "image": "test2.png",
+      "image_size": [
+        1280,
+        720
+      ],
+      "plot": "fitted/test2.png",
+      "fit": "fits/test2.npz",
+      "status": "ok",
+      "issues": [],
+      "left": {
+        "coefficients": [
+          -0.00021705664535811287,
+          0.2981679448559719,
+          273.91838682887277
+        ],
+        "candidate_pixels": 34962,
+        "inlier_pixels": 34781,
+        "observed_y_range": [
+          0,
+          719
+        ],
+        "observed_rows": 720,
+        "rms_error_pixels": 14.955306039215445
+      },
+      "right": {
+        "coefficients": [
+          -0.00027169637860837277,
+          0.32211024271326155,
+          891.9981701778524
+        ],
+        "candidate_pixels": 15372,
+        "inlier_pixels": 15372,
+        "observed_y_range": [
+          0,
+          639
+        ],
+        "observed_rows": 379,
+        "rms_error_pixels": 18.652075227801724
+      }
+    },
+    {
+      "image": "test3.png",
+      "image_size": [
+        1280,
+        720
+      ],
+      "plot": "fitted/test3.png",
+      "fit": "fits/test3.npz",
+      "status": "ok",
+      "issues": [],
+      "left": {
+        "coefficients": [
+          0.00012395854988956923,
+          -0.2940193928030351,
+          488.0172677089806
+        ],
+        "candidate_pixels": 40532,
+        "inlier_pixels": 40456,
+        "observed_y_range": [
+          0,
+          719
+        ],
+        "observed_rows": 720,
+        "rms_error_pixels": 17.969317690010016
+      },
+      "right": {
+        "coefficients": [
+          0.00015547037924953008,
+          -0.2651704591540633,
+          1090.4731969431764
+        ],
+        "candidate_pixels": 11693,
+        "inlier_pixels": 11693,
+        "observed_y_range": [
+          0,
+          719
+        ],
+        "observed_rows": 384,
+        "rms_error_pixels": 13.195874251304945
+      }
+    },
+    {
+      "image": "test4.png",
+      "image_size": [
+        1280,
+        720
+      ],
+      "plot": "fitted/test4.png",
+      "fit": "fits/test4.npz",
+      "status": "ok",
+      "issues": [],
+      "left": {
+        "coefficients": [
+          0.0001167640525424209,
+          -0.15450798747371747,
+          410.9542357734005
+        ],
+        "candidate_pixels": 25131,
+        "inlier_pixels": 23362,
+        "observed_y_range": [
+          133,
+          719
+        ],
+        "observed_rows": 587,
+        "rms_error_pixels": 14.015411115545433
+      },
+      "right": {
+        "coefficients": [
+          0.0002483918551343004,
+          -0.2742833857357068,
+          1085.9426779980975
+        ],
+        "candidate_pixels": 8011,
+        "inlier_pixels": 7847,
+        "observed_y_range": [
+          0,
+          559
+        ],
+        "observed_rows": 294,
+        "rms_error_pixels": 15.62335898280028
+      }
+    },
+    {
+      "image": "test5.png",
+      "image_size": [
+        1280,
+        720
+      ],
+      "plot": "fitted/test5.png",
+      "fit": "fits/test5.npz",
+      "status": "ok",
+      "issues": [],
+      "left": {
+        "coefficients": [
+          0.00018154224709498876,
+          -0.27966405664516086,
+          398.6345080195507
+        ],
+        "candidate_pixels": 21564,
+        "inlier_pixels": 21553,
+        "observed_y_range": [
+          0,
+          719
+        ],
+        "observed_rows": 583,
+        "rms_error_pixels": 14.662218672226935
+      },
+      "right": {
+        "coefficients": [
+          0.00013521359552672106,
+          -0.22051373931504384,
+          1067.3335338084503
+        ],
+        "candidate_pixels": 6767,
+        "inlier_pixels": 6747,
+        "observed_y_range": [
+          50,
+          718
+        ],
+        "observed_rows": 302,
+        "rms_error_pixels": 12.384436456582446
+      }
+    },
+    {
+      "image": "test6.png",
+      "image_size": [
+        1280,
+        720
+      ],
+      "plot": "fitted/test6.png",
+      "fit": "fits/test6.npz",
+      "status": "ok",
+      "issues": [],
+      "left": {
+        "coefficients": [
+          0.00011028799157216945,
+          -0.29232412125024293,
+          507.2493778711698
+        ],
+        "candidate_pixels": 36730,
+        "inlier_pixels": 36665,
+        "observed_y_range": [
+          0,
+          719
+        ],
+        "observed_rows": 720,
+        "rms_error_pixels": 16.08346898477945
+      },
+      "right": {
+        "coefficients": [
+          0.00017336158552864748,
+          -0.27297348903440705,
+          1118.3239228330578
+        ],
+        "candidate_pixels": 12307,
+        "inlier_pixels": 12307,
+        "observed_y_range": [
+          11,
+          659
+        ],
+        "observed_rows": 355,
+        "rms_error_pixels": 13.794727850632452
+      }
+    },
+    {
+      "image": "whiteCarLaneSwitch.png",
+      "image_size": [
+        960,
+        540
+      ],
+      "plot": "fitted/whiteCarLaneSwitch.png",
+      "fit": "fits/whiteCarLaneSwitch.npz",
+      "status": "ok",
+      "issues": [],
+      "left": {
+        "coefficients": [
+          2.39770582017287e-05,
+          -0.038137699988498426,
+          271.0858824944368
+        ],
+        "candidate_pixels": 23967,
+        "inlier_pixels": 23963,
+        "observed_y_range": [
+          0,
+          539
+        ],
+        "observed_rows": 540,
+        "rms_error_pixels": 15.824676589030563
+      },
+      "right": {
+        "coefficients": [
+          0.0001164893812910893,
+          -0.144032828038367,
+          796.4507570729256
+        ],
+        "candidate_pixels": 11265,
+        "inlier_pixels": 11265,
+        "observed_y_range": [
+          0,
+          539
+        ],
+        "observed_rows": 319,
+        "rms_error_pixels": 14.448416221740105
+      }
+    }
+  ]
+}

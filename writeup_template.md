@@ -197,14 +197,195 @@ The following comparison shows the selected region in the undistorted image and 
 
 ![Source ROI and bird's-eye binary mask](./outputs/perspective/comparisons/straight_lines1_comparison.png)
 
-
 #### 4. Describe how (and identify where in your code) you identified lane-line pixels and fit their positions with a polynomial?
 
-TODO: Add your text here!!!
+I implemented lane pixel detection and polynomial fitting in `lane_fitting.py`. In `find_lane_pixels()`, I calculated a histogram of the nonzero pixels in the lower half of each bird's-eye binary image. The peaks in the left and right halves of the histogram were used as starting positions for the sliding-window searches.
+
+I used nine sliding windows for each lane boundary, moving from the bottom of the image toward the top. Each window collects nearby nonzero pixels and updates its horizontal position using their median x coordinate, provided that enough pixels are detected. Windows with insufficient pixels are skipped to prevent the search from drifting toward noise, particularly in gaps between dashed lane markings.
+
+In `fit_boundary()`, I fitted a second-degree polynomial of the form \(x = ay^2 + by + c\) to the detected pixels using `np.polyfit()`. I used row-balanced weights to reduce the influence of rows containing many detected pixels. The fitting process also includes iterative outlier rejection, removing pixels that deviate too far from the estimated curve.
+
+Finally, I evaluated the fitted polynomials using `np.polyval()` and drew the resulting boundaries on the bird's-eye binary images, with the left boundary in green and the right in red. All 17 supplied images produced two fitted boundaries that passed the configured pixel-support and lane-width checks.
+
+The following code excerpts show the main parts of the implementation.
+
+**Finding lane pixels**
+
+The `find_lane_pixels()` function calculates the histogram, initializes the sliding-window positions, and extracts the coordinates of nonzero pixels:
+
+```python
+histogram = np.count_nonzero(binary[height // 2 :], axis=0)
+midpoint = width // 2
+left_current = int(np.argmax(histogram[:midpoint])) if histogram[:midpoint].any() else None
+right_current = midpoint + int(np.argmax(histogram[midpoint:])) if histogram[midpoint:].any() else None
+margin = max(2, int(round(width * settings.margin_fraction)))
+minimum_pixels = max(10, int(round(binary.size * settings.minimum_window_pixel_fraction)))
+nonzero_y, nonzero_x = np.nonzero(binary)
+edges = np.linspace(height, 0, settings.windows + 1, dtype=int)
+```
+
+The sliding windows then collect nearby pixels and update their positions:
+
+```python
+left_indices = []
+right_indices = []
+
+for bottom, top in zip(edges[:-1], edges[1:]):
+    in_band = (nonzero_y >= top) & (nonzero_y < bottom)
+    if left_current is not None:
+        selected = np.flatnonzero(in_band & (np.abs(nonzero_x - left_current) <= margin))
+        if selected.size >= minimum_pixels:
+            left_indices.extend(selected)
+            left_current = int(np.median(nonzero_x[selected]))
+    if right_current is not None:
+        selected = np.flatnonzero(in_band & (np.abs(nonzero_x - right_current) <= margin))
+        if selected.size >= minimum_pixels:
+            right_indices.extend(selected)
+            right_current = int(np.median(nonzero_x[selected]))
+```
+
+The selected pixel coordinates are returned separately for the left and right boundaries:
+
+```python
+left_indices = np.asarray(left_indices, dtype=int)
+right_indices = np.asarray(right_indices, dtype=int)
+return (
+    nonzero_x[left_indices], nonzero_y[left_indices],
+    nonzero_x[right_indices], nonzero_y[right_indices],
+)
+```
+
+**Polynomial fitting**
+
+In `fit_boundary()`, I used weighted polynomial fitting with iterative outlier rejection. The following loop fits a polynomial, calculates the residuals, and removes pixels that deviate too far from the fitted curve:
+
+```python
+for _ in range(settings.refinement_iterations):
+    counts = np.bincount(pixel_y[keep], minlength=height)
+    weights = 1 / np.sqrt(counts[pixel_y[keep]])
+    coefficients = np.polyfit(pixel_y[keep], pixel_x[keep], 2, w=weights)
+    residuals = pixel_x - np.polyval(coefficients, pixel_y)
+    center = float(np.median(residuals[keep]))
+    deviation = float(np.median(np.abs(residuals[keep] - center)))
+    limit = max(width * settings.minimum_residual_fraction, settings.outlier_sigma * 1.4826 * deviation)
+    refined = np.abs(residuals - center) <= limit
+    if np.array_equal(refined, keep) or not sufficient_support(refined):
+        break
+    keep = refined
+```
+
+After refinement, the final polynomial coefficients are calculated using the retained pixels:
+
+```python
+counts = np.bincount(pixel_y[keep], minlength=height)
+weights = 1 / np.sqrt(counts[pixel_y[keep]])
+coefficients = np.polyfit(pixel_y[keep], pixel_x[keep], 2, w=weights)
+```
+
+The resulting curves are drawn on the bird's-eye binary image.
+
+![Bird's-eye lane boundaries fitted with polynomials](./outputs/lane_fitting/fitted/straight_lines1.png)
 
 #### 5. Describe how (and identify where in your code) you calculated the radius of curvature of the lane and the position of the vehicle with respect to center.
 
-TODO: Add your text here!!!
+I implemented the lane curvature and vehicle position calculations in `lane_metrics.py`, using the polynomial coefficients obtained in the previous stage.
+
+To convert pixel measurements into meters, I assumed a lane width of 3.7 m and a visible road length of 30 m. The horizontal scale was calculated from the width of the destination rectangle in the perspective transformation, while the vertical scale was based on the full height of the bird's-eye image.
+
+Using these scales, I converted the polynomial coefficients from pixels to meters and calculated the radius of curvature at the bottom of the bird's-eye image, representing the nearest visible part of the road. I calculated separate radii for the left and right boundaries and for the lane centerline, obtained by averaging their polynomial coefficients.
+
+For a lane boundary described by $x(y) = Ay^2 + By + C$ in meters, the radius of curvature is:
+
+$$
+R(y) = \frac{\left[1 + (2Ay + B)^2\right]^{3/2}}{|2A|}
+$$
+
+Here, $2Ay+B$ is the first derivative and $2A$ is the second derivative of the fitted polynomial. A straight line has an infinite radius of curvature.
+
+To estimate the vehicle's lateral position, I calculated the midpoint between the fitted boundaries at the bottom of the image. I compared this with the assumed vehicle centerline, projected into the bird's-eye view using the inverse perspective matrix. The difference was converted to meters: a positive offset indicates the vehicle is right of the lane center, and a negative offset indicates it is left.
+
+These measurements are approximate because they depend on the assumed road dimensions and on the camera being centered and aligned with the vehicle.
+
+**Converting the fitted polynomials to meters**
+
+In `measure_lane_geometry()`, the horizontal and vertical scales are used to convert the boundary polynomials:
+
+```python
+x_m_per_pixel = settings.lane_width_m / reference_lane_width
+y_m_per_pixel = settings.visible_road_length_m / (height - 1)
+left_m = polynomial_in_meters(left_coefficients, x_m_per_pixel, y_m_per_pixel)
+right_m = polynomial_in_meters(right_coefficients, x_m_per_pixel, y_m_per_pixel)
+center_m = (left_m + right_m) / 2
+evaluation_y = float(height - 1)
+evaluation_y_m = evaluation_y * y_m_per_pixel
+```
+
+The coefficient conversion in `polynomial_in_meters()` is:
+
+```python
+return coefficients * np.array([
+    x_m_per_pixel / y_m_per_pixel**2,
+    x_m_per_pixel / y_m_per_pixel,
+    x_m_per_pixel,
+])
+```
+
+**Calculating curvature**
+
+The `radius_of_curvature()` function implements the equation above:
+
+```python
+def radius_of_curvature(coefficients_m: np.ndarray, y_m: float) -> float:
+    a, b, _ = coefficients_m
+    second_derivative = 2 * float(a)
+    if abs(second_derivative) <= 1e-12:
+        return float("inf")
+    slope = 2 * float(a) * y_m + float(b)
+    return float((1 + slope**2)**1.5 / abs(second_derivative))
+```
+
+**Estimating vehicle position**
+
+The `vehicle_reference_x()` function projects the assumed vehicle centerline into the bird's-eye view:
+
+```python
+def vehicle_reference_x(
+    inverse_matrix: np.ndarray, image_width: int,
+    evaluation_y: float, vehicle_center_fraction: float,
+) -> float:
+    source_center_x = vehicle_center_fraction * (image_width - 1)
+    source_centerline = np.array([1.0, 0.0, -source_center_x])
+    bird_centerline = inverse_matrix.T @ source_centerline
+    if not np.isfinite(bird_centerline).all() or abs(bird_centerline[0]) <= 1e-12:
+        raise ValueError("Cannot intersect the projected vehicle centerline with the evaluation row.")
+    return float(-(bird_centerline[1] * evaluation_y + bird_centerline[2]) / bird_centerline[0])
+```
+
+In `measure_lane_geometry()`, the signed lateral offset is calculated as follows:
+
+```python
+left_x = float(np.polyval(left_coefficients, evaluation_y))
+right_x = float(np.polyval(right_coefficients, evaluation_y))
+if right_x <= left_x:
+    raise ValueError("Lane boundaries must be ordered left to right at the evaluation row.")
+lane_center_x = (left_x + right_x) / 2
+vehicle_x = vehicle_reference_x(
+    inverse_matrix, width, evaluation_y, settings.vehicle_center_fraction,
+)
+offset_m = (vehicle_x - lane_center_x) * x_m_per_pixel
+```
+
+Finally, the radii are calculated for both boundaries and the centerline:
+
+```python
+radii = {
+    "left": radius_of_curvature(left_m, evaluation_y_m),
+    "right": radius_of_curvature(right_m, evaluation_y_m),
+    "center": radius_of_curvature(center_m, evaluation_y_m),
+}
+```
+
+![Approximate lane curvature and vehicle offset](./outputs/lane_metrics/annotated/test2.png)
 
 #### 6. Provide an example image of your result plotted back down onto the road such that the lane area is identified clearly.
 

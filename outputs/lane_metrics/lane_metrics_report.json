@@ -1,0 +1,836 @@
+{
+  "settings": {
+    "lane_width_m": 3.7,
+    "visible_road_length_m": 30.0,
+    "vehicle_center_fraction": 0.5
+  },
+  "assumptions": [
+    "The destination control rectangle spans one lane of the assumed physical width.",
+    "The full bird's-eye image height represents the assumed visible road length.",
+    "The centered, aligned camera makes the configured corrected-image centerline a vehicle-center proxy."
+  ],
+  "offset_sign_convention": "Positive: vehicle reference right of lane center; negative: left.",
+  "scale_reference": "Destination rectangle width and full bird's-eye height.",
+  "evaluation_reference": "Nearest visible road row, ahead of the vehicle.",
+  "straight_radius_encoding": "null radius with straight=true represents an infinite radius.",
+  "opencv_version": "4.14.0",
+  "numpy_version": "2.2.6",
+  "images": [
+    {
+      "image": "challange00101.png",
+      "image_size": [
+        960,
+        540
+      ],
+      "status": "estimated",
+      "plot": "annotated/challange00101.png",
+      "metrics": {
+        "approximate": true,
+        "evaluation_y_pixels": 539.0,
+        "evaluation_y_m": 30.0,
+        "evaluation_reference": "Nearest row of the visible road ROI.",
+        "x_m_per_pixel": 0.007716371220020855,
+        "y_m_per_pixel": 0.055658627087198514,
+        "reference_lane_width_pixels": 479.5,
+        "fitted_lane_width_m": 3.6688221791379036,
+        "left_coefficients_m": [
+          0.0007679788450746006,
+          -0.03557589602022846,
+          2.479635415003634
+        ],
+        "right_coefficients_m": [
+          0.0003893667793819231,
+          -0.023842514692930406,
+          6.137207013446005
+        ],
+        "center_coefficients_m": [
+          0.0005786728122282618,
+          -0.029709205356579435,
+          4.30842121422482
+        ],
+        "radius_m": {
+          "left": 651.1673305079391,
+          "right": 1284.1367051385546,
+          "center": 864.0786699683329
+        },
+        "straight": {
+          "left": false,
+          "right": false,
+          "center": false
+        },
+        "lane_center_x_pixels": 510.3371095360844,
+        "vehicle_reference_x_pixels": 467.4849425287356,
+        "vehicle_offset_m": -0.33066322821103383,
+        "vehicle_offset_direction": "left"
+      }
+    },
+    {
+      "image": "challange00111.png",
+      "image_size": [
+        960,
+        540
+      ],
+      "status": "estimated",
+      "plot": "annotated/challange00111.png",
+      "metrics": {
+        "approximate": true,
+        "evaluation_y_pixels": 539.0,
+        "evaluation_y_m": 30.0,
+        "evaluation_reference": "Nearest row of the visible road ROI.",
+        "x_m_per_pixel": 0.007716371220020855,
+        "y_m_per_pixel": 0.055658627087198514,
+        "reference_lane_width_pixels": 479.5,
+        "fitted_lane_width_m": 4.096667613631906,
+        "left_coefficients_m": [
+          0.000311300052166065,
+          -0.02418292958070018,
+          2.298025126922135
+        ],
+        "right_coefficients_m": [
+          0.0012099155674544224,
+          -0.050096014708369226,
+          6.36333133062459
+        ],
+        "center_coefficients_m": [
+          0.0007606078098102438,
+          -0.0371394721445347,
+          4.330678228773363
+        ],
+        "radius_m": {
+          "left": 1606.2404257705348,
+          "right": 413.56579957247976,
+          "center": 657.4401994551552
+        },
+        "straight": {
+          "left": false,
+          "right": false,
+          "center": false
+        },
+        "lane_center_x_pixels": 505.55383897873145,
+        "vehicle_reference_x_pixels": 467.4849425287356,
+        "vehicle_offset_m": -0.2937537369447022,
+        "vehicle_offset_direction": "left"
+      }
+    },
+    {
+      "image": "challange00136.png",
+      "image_size": [
+        960,
+        540
+      ],
+      "status": "estimated",
+      "plot": "annotated/challange00136.png",
+      "metrics": {
+        "approximate": true,
+        "evaluation_y_pixels": 539.0,
+        "evaluation_y_m": 30.0,
+        "evaluation_reference": "Nearest row of the visible road ROI.",
+        "x_m_per_pixel": 0.007716371220020855,
+        "y_m_per_pixel": 0.055658627087198514,
+        "reference_lane_width_pixels": 479.5,
+        "fitted_lane_width_m": 3.9356221596052943,
+        "left_coefficients_m": [
+          0.0007846782724324899,
+          -0.046542107294734424,
+          2.395829392113209
+        ],
+        "right_coefficients_m": [
+          0.00045575721886025635,
+          -0.02887922006933262,
+          6.09759388317146
+        ],
+        "center_coefficients_m": [
+          0.0006202177456463732,
+          -0.03771066368203352,
+          4.246711637642335
+        ],
+        "radius_m": {
+          "left": 637.2041066061992,
+          "right": 1097.0791985000358,
+          "center": 806.1687838074625
+        },
+        "straight": {
+          "left": false,
+          "right": false,
+          "center": false
+        },
+        "lane_center_x_pixels": 476.07710846409174,
+        "vehicle_reference_x_pixels": 467.4849425287356,
+        "vehicle_offset_m": -0.06630034194122576,
+        "vehicle_offset_direction": "left"
+      }
+    },
+    {
+      "image": "solidWhiteCurve.png",
+      "image_size": [
+        960,
+        540
+      ],
+      "status": "estimated",
+      "plot": "annotated/solidWhiteCurve.png",
+      "metrics": {
+        "approximate": true,
+        "evaluation_y_pixels": 539.0,
+        "evaluation_y_m": 30.0,
+        "evaluation_reference": "Nearest row of the visible road ROI.",
+        "x_m_per_pixel": 0.007716371220020855,
+        "y_m_per_pixel": 0.055658627087198514,
+        "reference_lane_width_pixels": 479.5,
+        "fitted_lane_width_m": 3.8442448626366916,
+        "left_coefficients_m": [
+          0.00023794167927590132,
+          -0.0006393662181751143,
+          1.8193417724159675
+        ],
+        "right_coefficients_m": [
+          4.448677999185496e-05,
+          -0.013259127189066211,
+          6.216288873535034
+        ],
+        "center_coefficients_m": [
+          0.00014121422963387815,
+          -0.006949246703620663,
+          4.017815322975501
+        ],
+        "radius_m": {
+          "left": 2101.9414782033286,
+          "right": 11241.184735331757,
+          "center": 3540.7319951483473
+        },
+        "straight": {
+          "left": false,
+          "right": false,
+          "center": false
+        },
+        "lane_center_x_pixels": 510.14014441450524,
+        "vehicle_reference_x_pixels": 467.4849425287356,
+        "vehicle_offset_m": -0.3291433722155323,
+        "vehicle_offset_direction": "left"
+      }
+    },
+    {
+      "image": "solidWhiteRight.png",
+      "image_size": [
+        960,
+        540
+      ],
+      "status": "estimated",
+      "plot": "annotated/solidWhiteRight.png",
+      "metrics": {
+        "approximate": true,
+        "evaluation_y_pixels": 539.0,
+        "evaluation_y_m": 30.0,
+        "evaluation_reference": "Nearest row of the visible road ROI.",
+        "x_m_per_pixel": 0.007716371220020855,
+        "y_m_per_pixel": 0.055658627087198514,
+        "reference_lane_width_pixels": 479.5,
+        "fitted_lane_width_m": 3.7779846609638206,
+        "left_coefficients_m": [
+          0.00015622044568713625,
+          0.004573459097370765,
+          1.5444745285271235
+        ],
+        "right_coefficients_m": [
+          -0.0001378492431917088,
+          -0.008634060745965127,
+          5.983347504781982
+        ],
+        "center_coefficients_m": [
+          9.185601247713727e-06,
+          -0.002030300824297181,
+          3.7639110166545526
+        ],
+        "radius_m": {
+          "left": 3201.5392570939835,
+          "right": 3628.7058121487185,
+          "center": 54433.19685487259
+        },
+        "straight": {
+          "left": false,
+          "right": false,
+          "center": false
+        },
+        "lane_center_x_pixels": 480.96040576940374,
+        "vehicle_reference_x_pixels": 467.4849425287356,
+        "vehicle_offset_m": -0.10398167672674066,
+        "vehicle_offset_direction": "left"
+      }
+    },
+    {
+      "image": "solidYellowCurve.png",
+      "image_size": [
+        960,
+        540
+      ],
+      "status": "estimated",
+      "plot": "annotated/solidYellowCurve.png",
+      "metrics": {
+        "approximate": true,
+        "evaluation_y_pixels": 539.0,
+        "evaluation_y_m": 30.0,
+        "evaluation_reference": "Nearest row of the visible road ROI.",
+        "x_m_per_pixel": 0.007716371220020855,
+        "y_m_per_pixel": 0.055658627087198514,
+        "reference_lane_width_pixels": 479.5,
+        "fitted_lane_width_m": 3.7042068651338216,
+        "left_coefficients_m": [
+          -0.000145837658247609,
+          0.011302748619750107,
+          1.6688298804505592
+        ],
+        "right_coefficients_m": [
+          -0.00021151868909413983,
+          0.0011234020289862048,
+          5.737530071069176
+        ],
+        "center_coefficients_m": [
+          -0.0001786781736708744,
+          0.006213075324368156,
+          3.7031799757598676
+        ],
+        "radius_m": {
+          "left": 3428.5032577770844,
+          "right": 2364.3317978030077,
+          "center": 2798.4125243177537
+        },
+        "straight": {
+          "left": false,
+          "right": false,
+          "center": false
+        },
+        "lane_center_x_pixels": 483.22738407303416,
+        "vehicle_reference_x_pixels": 467.4849425287356,
+        "vehicle_offset_m": -0.12147452286528616,
+        "vehicle_offset_direction": "left"
+      }
+    },
+    {
+      "image": "solidYellowCurve2.png",
+      "image_size": [
+        960,
+        540
+      ],
+      "status": "estimated",
+      "plot": "annotated/solidYellowCurve2.png",
+      "metrics": {
+        "approximate": true,
+        "evaluation_y_pixels": 539.0,
+        "evaluation_y_m": 30.0,
+        "evaluation_reference": "Nearest row of the visible road ROI.",
+        "x_m_per_pixel": 0.007716371220020855,
+        "y_m_per_pixel": 0.055658627087198514,
+        "reference_lane_width_pixels": 479.5,
+        "fitted_lane_width_m": 3.8021437972695504,
+        "left_coefficients_m": [
+          2.144470785979852e-05,
+          0.005757778409101621,
+          1.694168942873064
+        ],
+        "right_coefficients_m": [
+          -9.416243057375366e-05,
+          -0.006174208579374446,
+          5.958318774387094
+        ],
+        "center_coefficients_m": [
+          -3.635886135697757e-05,
+          -0.00020821508513641212,
+          3.826243858630079
+        ],
+        "radius_m": {
+          "left": 23317.51134371729,
+          "right": 5311.086970046976,
+          "center": 13751.923589250862
+        },
+        "straight": {
+          "left": false,
+          "right": false,
+          "center": false
+        },
+        "lane_center_x_pixels": 490.8102944850897,
+        "vehicle_reference_x_pixels": 467.4849425287356,
+        "vehicle_offset_m": -0.1799870745328679,
+        "vehicle_offset_direction": "left"
+      }
+    },
+    {
+      "image": "solidYellowLeft.png",
+      "image_size": [
+        960,
+        540
+      ],
+      "status": "estimated",
+      "plot": "annotated/solidYellowLeft.png",
+      "metrics": {
+        "approximate": true,
+        "evaluation_y_pixels": 539.0,
+        "evaluation_y_m": 30.0,
+        "evaluation_reference": "Nearest row of the visible road ROI.",
+        "x_m_per_pixel": 0.007716371220020855,
+        "y_m_per_pixel": 0.055658627087198514,
+        "reference_lane_width_pixels": 479.5,
+        "fitted_lane_width_m": 3.845259548922455,
+        "left_coefficients_m": [
+          -0.00010431612289055598,
+          0.01776128240662446,
+          1.3549401113922461
+        ],
+        "right_coefficients_m": [
+          0.00024314651959402952,
+          -0.02428272454998325,
+          6.148803490776805
+        ],
+        "center_coefficients_m": [
+          6.941519835173678e-05,
+          -0.0032607210716793945,
+          3.7518718010845253
+        ],
+        "radius_m": {
+          "left": 4794.074174372648,
+          "right": 2056.6631253817386,
+          "center": 7203.04234581802
+        },
+        "straight": {
+          "left": false,
+          "right": false,
+          "center": false
+        },
+        "lane_center_x_pixels": 481.64140131151726,
+        "vehicle_reference_x_pixels": 467.4849425287356,
+        "vehicle_offset_m": -0.10923649112886795,
+        "vehicle_offset_direction": "left"
+      }
+    },
+    {
+      "image": "straight_lines1.png",
+      "image_size": [
+        1280,
+        720
+      ],
+      "status": "estimated",
+      "plot": "annotated/straight_lines1.png",
+      "metrics": {
+        "approximate": true,
+        "evaluation_y_pixels": 719.0,
+        "evaluation_y_m": 30.0,
+        "evaluation_reference": "Nearest row of the visible road ROI.",
+        "x_m_per_pixel": 0.005785770132916341,
+        "y_m_per_pixel": 0.04172461752433936,
+        "reference_lane_width_pixels": 639.5,
+        "fitted_lane_width_m": 3.658010430378825,
+        "left_coefficients_m": [
+          -0.00010519464249867102,
+          0.0017871354358973113,
+          1.889108894023072
+        ],
+        "right_coefficients_m": [
+          4.54928390120546e-05,
+          0.0010958220774280858,
+          5.432239991796321
+        ],
+        "center_coefficients_m": [
+          -2.9850901743308208e-05,
+          0.0014414787566626986,
+          3.6606744429096962
+        ],
+        "radius_m": {
+          "left": 4753.239726088595,
+          "right": 10990.982012092596,
+          "center": 16749.915830073125
+        },
+        "straight": {
+          "left": false,
+          "right": false,
+          "center": false
+        },
+        "lane_center_x_pixels": 635.5338891051254,
+        "vehicle_reference_x_pixels": 623.6227586206896,
+        "vehicle_offset_m": -0.06891506300611752,
+        "vehicle_offset_direction": "left"
+      }
+    },
+    {
+      "image": "straight_lines2.png",
+      "image_size": [
+        1280,
+        720
+      ],
+      "status": "estimated",
+      "plot": "annotated/straight_lines2.png",
+      "metrics": {
+        "approximate": true,
+        "evaluation_y_pixels": 719.0,
+        "evaluation_y_m": 30.0,
+        "evaluation_reference": "Nearest row of the visible road ROI.",
+        "x_m_per_pixel": 0.005785770132916341,
+        "y_m_per_pixel": 0.04172461752433936,
+        "reference_lane_width_pixels": 639.5,
+        "fitted_lane_width_m": 3.628240678854377,
+        "left_coefficients_m": [
+          0.00010715572834278829,
+          -0.0032994997508795313,
+          1.8874312691820403
+        ],
+        "right_coefficients_m": [
+          -4.419869887574731e-06,
+          -0.0012094415266989864,
+          5.553388239718328
+        ],
+        "center_coefficients_m": [
+          5.136792922760678e-05,
+          -0.002254470638789259,
+          3.720409754450184
+        ],
+        "radius_m": {
+          "left": 4666.1746851353055,
+          "right": 113125.87103863894,
+          "center": 9733.709752680496
+        },
+        "straight": {
+          "left": false,
+          "right": false,
+          "center": false
+        },
+        "lane_center_x_pixels": 639.3283325493702,
+        "vehicle_reference_x_pixels": 623.6227586206896,
+        "vehicle_offset_m": -0.09086884055686957,
+        "vehicle_offset_direction": "left"
+      }
+    },
+    {
+      "image": "test1.png",
+      "image_size": [
+        1280,
+        720
+      ],
+      "status": "estimated",
+      "plot": "annotated/test1.png",
+      "metrics": {
+        "approximate": true,
+        "evaluation_y_pixels": 719.0,
+        "evaluation_y_m": 30.0,
+        "evaluation_reference": "Nearest row of the visible road ROI.",
+        "x_m_per_pixel": 0.005785770132916341,
+        "y_m_per_pixel": 0.04172461752433936,
+        "reference_lane_width_pixels": 639.5,
+        "fitted_lane_width_m": 3.195508720290025,
+        "left_coefficients_m": [
+          0.0007400776836592737,
+          -0.03835399170832812,
+          2.4802322741492224
+        ],
+        "right_coefficients_m": [
+          -0.000781857577423825,
+          -0.00865630012476362,
+          6.154551981907101
+        ],
+        "center_coefficients_m": [
+          -2.0889946882275614e-05,
+          -0.023505145916545872,
+          4.317392128028162
+        ],
+        "radius_m": {
+          "left": 675.641853877134,
+          "right": 642.4669054889904,
+          "center": 23956.968983455496
+        },
+        "straight": {
+          "left": false,
+          "right": false,
+          "center": false
+        },
+        "lane_center_x_pixels": 621.081846631617,
+        "vehicle_reference_x_pixels": 623.6227586206896,
+        "vehicle_offset_m": 0.014701132696745205,
+        "vehicle_offset_direction": "right"
+      }
+    },
+    {
+      "image": "test2.png",
+      "image_size": [
+        1280,
+        720
+      ],
+      "status": "estimated",
+      "plot": "annotated/test2.png",
+      "metrics": {
+        "approximate": true,
+        "evaluation_y_pixels": 719.0,
+        "evaluation_y_m": 30.0,
+        "evaluation_reference": "Nearest row of the visible road ROI.",
+        "x_m_per_pixel": 0.005785770132916341,
+        "y_m_per_pixel": 0.04172461752433936,
+        "reference_lane_width_pixels": 639.5,
+        "fitted_lane_width_m": 3.5122383614699895,
+        "left_coefficients_m": [
+          -0.0007213558085858898,
+          0.04134564418557947,
+          1.584828821371117
+        ],
+        "right_coefficients_m": [
+          -0.0009029429186908574,
+          0.04466561786239717,
+          5.160896371631046
+        ],
+        "center_coefficients_m": [
+          -0.0008121493636383736,
+          0.04300563102398832,
+          3.3728625965010814
+        ],
+        "radius_m": {
+          "left": 693.1431122683434,
+          "right": 553.8199978247253,
+          "center": 615.6805508627677
+        },
+        "straight": {
+          "left": false,
+          "right": false,
+          "center": false
+        },
+        "lane_center_x_pixels": 679.6151609231329,
+        "vehicle_reference_x_pixels": 623.6227586206896,
+        "vehicle_offset_m": -0.32395916891171217,
+        "vehicle_offset_direction": "left"
+      }
+    },
+    {
+      "image": "test3.png",
+      "image_size": [
+        1280,
+        720
+      ],
+      "status": "estimated",
+      "plot": "annotated/test3.png",
+      "metrics": {
+        "approximate": true,
+        "evaluation_y_pixels": 719.0,
+        "evaluation_y_m": 30.0,
+        "evaluation_reference": "Nearest row of the visible road ROI.",
+        "x_m_per_pixel": 0.005785770132916341,
+        "y_m_per_pixel": 0.04172461752433936,
+        "reference_lane_width_pixels": 639.5,
+        "fitted_lane_width_m": 3.699934617011065,
+        "left_coefficients_m": [
+          0.00041195799298932826,
+          -0.040770382625692686,
+          2.8235557318580584
+        ],
+        "right_coefficients_m": [
+          0.0005166829191046831,
+          -0.03677002723417016,
+          6.309227253619629
+        ],
+        "center_coefficients_m": [
+          0.00046432045604700566,
+          -0.038770204929931426,
+          4.566391492738844
+        ],
+        "radius_m": {
+          "left": 1214.1851662917243,
+          "right": 967.7598062379088,
+          "center": 1077.034800466161
+        },
+        "straight": {
+          "left": false,
+          "right": false,
+          "center": false
+        },
+        "lane_center_x_pixels": 660.4434098658406,
+        "vehicle_reference_x_pixels": 623.6227586206896,
+        "vehicle_offset_m": -0.21303582424872353,
+        "vehicle_offset_direction": "left"
+      }
+    },
+    {
+      "image": "test4.png",
+      "image_size": [
+        1280,
+        720
+      ],
+      "status": "estimated",
+      "plot": "annotated/test4.png",
+      "metrics": {
+        "approximate": true,
+        "evaluation_y_pixels": 719.0,
+        "evaluation_y_m": 30.0,
+        "evaluation_reference": "Nearest row of the visible road ROI.",
+        "x_m_per_pixel": 0.005785770132916341,
+        "y_m_per_pixel": 0.04172461752433936,
+        "reference_lane_width_pixels": 639.5,
+        "fitted_lane_width_m": 3.800767121065052,
+        "left_coefficients_m": [
+          0.0003880481401365912,
+          -0.021424946524697973,
+          2.377686743333201
+        ],
+        "right_coefficients_m": [
+          0.0008254937655142164,
+          -0.03803367688677096,
+          6.28301471242058
+        ],
+        "center_coefficients_m": [
+          0.0006067709528254038,
+          -0.029729311705734465,
+          4.3303507278768905
+        ],
+        "radius_m": {
+          "left": 1288.5065981433836,
+          "right": 605.8181682286755,
+          "center": 824.0892782438198
+        },
+        "straight": {
+          "left": false,
+          "right": false,
+          "center": false
+        },
+        "lane_center_x_pixels": 688.6836398111936,
+        "vehicle_reference_x_pixels": 623.6227586206896,
+        "vehicle_offset_m": -0.37642730321323664,
+        "vehicle_offset_direction": "left"
+      }
+    },
+    {
+      "image": "test5.png",
+      "image_size": [
+        1280,
+        720
+      ],
+      "status": "estimated",
+      "plot": "annotated/test5.png",
+      "metrics": {
+        "approximate": true,
+        "evaluation_y_pixels": 719.0,
+        "evaluation_y_m": 30.0,
+        "evaluation_reference": "Nearest row of the visible road ROI.",
+        "x_m_per_pixel": 0.005785770132916341,
+        "y_m_per_pixel": 0.04172461752433936,
+        "reference_lane_width_pixels": 639.5,
+        "fitted_lane_width_m": 3.9764325132943252,
+        "left_coefficients_m": [
+          0.00060332893392711,
+          -0.038779790976967494,
+          2.306407630449316
+        ],
+        "right_coefficients_m": [
+          0.00044936248034268124,
+          -0.030577675303612776,
+          6.175346481768986
+        ],
+        "center_coefficients_m": [
+          0.0005263457071348957,
+          -0.03467873314029014,
+          4.2408770561091504
+        ],
+        "radius_m": {
+          "left": 828.7435997248904,
+          "right": 1112.7092894894056,
+          "center": 949.959677450101
+        },
+        "straight": {
+          "left": false,
+          "right": false,
+          "center": false
+        },
+        "lane_center_x_pixels": 635.0453118450878,
+        "vehicle_reference_x_pixels": 623.6227586206896,
+        "vehicle_offset_m": -0.06608826728737002,
+        "vehicle_offset_direction": "left"
+      }
+    },
+    {
+      "image": "test6.png",
+      "image_size": [
+        1280,
+        720
+      ],
+      "status": "estimated",
+      "plot": "annotated/test6.png",
+      "metrics": {
+        "approximate": true,
+        "evaluation_y_pixels": 719.0,
+        "evaluation_y_m": 30.0,
+        "evaluation_reference": "Nearest row of the visible road ROI.",
+        "x_m_per_pixel": 0.005785770132916341,
+        "y_m_per_pixel": 0.04172461752433936,
+        "reference_lane_width_pixels": 639.5,
+        "fitted_lane_width_m": 3.8046891002384875,
+        "left_coefficients_m": [
+          0.00036652590482359314,
+          -0.04053530673766074,
+          2.9348283004274096
+        ],
+        "right_coefficients_m": [
+          0.0005761417094621804,
+          -0.03785203924306662,
+          6.470365151653345
+        ],
+        "center_coefficients_m": [
+          0.00047133380714288676,
+          -0.03919367299036368,
+          4.702596726040378
+        ],
+        "radius_m": {
+          "left": 1364.8637617496029,
+          "right": 867.8560812727295,
+          "center": 1061.00883452341
+        },
+        "straight": {
+          "left": false,
+          "right": false,
+          "center": false
+        },
+        "lane_center_x_pixels": 682.8800439685899,
+        "vehicle_reference_x_pixels": 623.6227586206896,
+        "vehicle_offset_m": -0.34284903172358255,
+        "vehicle_offset_direction": "left"
+      }
+    },
+    {
+      "image": "whiteCarLaneSwitch.png",
+      "image_size": [
+        960,
+        540
+      ],
+      "status": "estimated",
+      "plot": "annotated/whiteCarLaneSwitch.png",
+      "metrics": {
+        "approximate": true,
+        "evaluation_y_pixels": 539.0,
+        "evaluation_y_m": 30.0,
+        "evaluation_reference": "Nearest row of the visible road ROI.",
+        "x_m_per_pixel": 0.007716371220020855,
+        "y_m_per_pixel": 0.055658627087198514,
+        "reference_lane_width_pixels": 479.5,
+        "fitted_lane_width_m": 3.8208705750795806,
+        "left_coefficients_m": [
+          5.972333223392508e-05,
+          -0.005287314222249734,
+          2.0917993018340275
+        ],
+        "right_coefficients_m": [
+          0.000290157948570626,
+          -0.019968346816608643,
+          6.145709700041345
+        ],
+        "center_coefficients_m": [
+          0.00017494064040227554,
+          -0.012627830519429189,
+          4.118754500937686
+        ],
+        "radius_m": {
+          "left": 8371.97388009249,
+          "right": 1723.2163148814027,
+          "center": 2858.131798182006
+        },
+        "straight": {
+          "left": false,
+          "right": false,
+          "center": false
+        },
+        "lane_center_x_pixels": 505.07758771438745,
+        "vehicle_reference_x_pixels": 467.4849425287356,
+        "vehicle_offset_m": -0.29007880539501957,
+        "vehicle_offset_direction": "left"
+      }
+    }
+  ]
+}
